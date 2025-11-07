@@ -1,0 +1,124 @@
+---
+title: "References"
+author: "Idris Baba"
+format: html
+editor: visual
+---
+
+# **References**
+
+Abdelfattah, L., Deponte, D., Fossa, G., 2022. The 15-minute city: interpreting the model to bring out urban resiliencies. Transportation Research Procedia 60, 330–337. <https://doi.org/10.1016/j.trpro.2021.12.043>
+
+Abubakar, I.R., 2014. Abuja city profile. Cities 41, 81–https://doi.org/10.1016/j.cities.2014.05.008
+
+Agyekum, E.B., Adebayo, T.S., Ampah, J.D., Chakraborty, S., Mehmood, U., Nutakor, C., 2023. Transportation in Africa under Paris Agreement 2 °C goal—a review of electric vehicle potentials, cleaner alternative fuels for the sector, challenges, and opportunities. Environ Sci Pollut Res. <https://doi.org/10.1007/s11356-023-30911-z>
+
+Allam, Z., Bibri, S.E., Chabaud, D., Moreno, C., 2022. The ‘15-Minute City’ concept can shape a net-zero urban future. Humanit Soc Sci Commun 9, 126. <https://doi.org/10.1057/s41599-022-01145-0>
+
+Altenburg, T., Barnes, J., Black, A. and Ndlovu, M., 2025. Africa’s automobile sector—development opportunities in a rapidly changing industry. In: M. Krzywdzinski, G. Lechowski, J. Humphrey and T. Pardi (eds.) \*Global Shifts in the Automotive Sector\*. Palgrave Studies of Internationalization in Emerging Markets. Cham: Palgrave Macmillan, pp. 233–254. \[https://doi.org/10.1007/978-3-031-80641-4\\\_13\](https://doi.org/10.1007/978-3-031-80641-4_13)
+
+Barabási, A.-L. and Albert, R., 1999. Emergence of scaling in random networks. \*Science\*, 286(5439), pp.509–512. \[https://doi.org/10.1126/science.286.5439.509\] (https://doi.org/10.1126/science.286.5439.509)
+
+Barrington-Leigh, C. and Millard-Ball, A., 2017. The world’s user-generated road map is more than 80% complete. \*PLOS ONE\*, 12(8), e0180698. \[https://doi.org/10.1371/journal.pone.0180698\](https://doi.org/10.1371/journal.pone.0180698)
+
+Bashir, O.A., Reigns, A., Unimke, O.P. and Mshelia, S.S., 2021. Population dynamics to urban spaces needs in one of Africa’s largest cities: Abuja, the Federal Capital City of Nigeria. \*International Journal of Research in Engineering and Technology\*, 4(10), pp.124–137. Available at: \[https://www.researchgate.net/publication/378035282\] (https://www.researchgate.net/publication/378035282) \\\[Accessed 4 September 2025\].
+
+Batty, M., 1976. \*Urban modelling: Algorithms, calibrations, predictions\*. London: Cambridge University Press.
+
+Batty, M., 2016. \*The New Science of Cities\*. Cambridge, MA: MIT Press.
+
+Bayarsaikhan, T. and Gim, T.-H.T., 2022. Comparison of research topics on transportation decarbonisation between Asian and non-Asian regions: Using topic modeling and machine learning algorithms. \*Journal of Environmental Policy and Administration\*, 30(Special Issue), pp.23–46. \[https://doi.org/10.15301/jepa.2022.30.S.23\](https://doi.org/10.15301/jepa.2022.30.S.23)
+
+Boeing, G., 2025. Modeling and Analyzing Urban Networks and Amenities With OSMnx. Geographical Analysis gean.70009. https://doi.org/10.1111/gean.70009
+
+Bondarenko, M., Priyatikanto, R., Tejedor-Garavito, N., Zhang, W., McKeen, T., Cunningham, A., Woods, T., Hilton, J., Cihan, D., Nosatiuk, B., Brinkhoff, T., Tatem, A. and Sorichetta, A., 2025. Constrained estimates of 2015–2030 total number of people per grid square at a resolution of 3 arc (approximately 100m at the equator), R2025A version v1 \\\[Geotiff dataset\]. Southampton: WorldPop - University of Southampton. \[https://doi.org/10.5258/SOTON/WP00839\](<https://doi.org/10.5258/SOTON/WP00839>)
+
+Bianchi Alves, B., Bou Mjahed, L., Moody, J., 2023. Decarbonizing Urban Transport for Development. Washington, DC: World Bank. https://doi.org/10.1596/40373
+
+Brovelli, M.A., Minghini, M., Molinari, M.E. and Zamboni, G., 2016. Positional accuracy assessment of the OpenStreetMap buildings layer through automatic homologous pairs detection: The method and a case study. \*The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences\*, XLI-B2, pp.615–620. \[https://doi.org/10.5194/isprs-archives-XLI-B2-615-2016\](https://doi.org/10.5194/isprs-archives-XLI-B2-615-2016)
+
+Cervero, R., Kockelman, K., 1997. Travel demand and the 3Ds: Density, diversity, and design. Transportation Research Part D: Transport and Environment 2, 199–219. https://doi.org/10.1016/S1361-9209(97)00009-6
+
+Creutzig, F., Franzen, M., Moeckel, R., Heinrichs, D., Nagel, K., Nieland, S., Weisz, H., 2019. Leveraging digitalization for sustainability in urban transport. Glob. Sustain. 2, e14. <https://doi.org/10.1017/sus.2019.11>
+
+Energy Transition Plan – Nigeria (ETP) (2023). Transport Decarbonisation Strategy. Abuja: Government of Nigeria. Available at: https://energytransition.gov.ng/transports/(Accessed 28 August 2025\]..
+
+Energy Transition Plan (ETP) (2022). Transport Decarbonisation Strategy. Government of Nigeria.
+
+Daily Trust (2025). Abuja Rail Mass Transit and the Lost Decades, 12 May. Daily Trust (Accessed 28 August 2025\]. 
+
+de Vries, J.J., Nijkamp, P. and Rietveld, P., 2009. Exponential or power distance-decay for commuting? \*Environment and Planning A: Economy and Space\*, 41(2), pp.461–480. \[https://doi.org/10.1068/a39369\](<https://doi.org/10.1068/a39369>)
+
+Federal Capital Territory Administration (FCTA) (2025). President Tinubu Commissions Newly Constructed Mabushi Bus and Taxi Terminal. Press Release, 18 June. Abuja: Office of the Minister, FCT. Available at: https://myfctagov.ng/index.php/2025/06/18/president-tinubu-commissions-newly-constructed-mabushi-bus-and-taxi-terminal/
+
+Fotheringham, A.S. and O’Kelly, M.E., 1989. \*Spatial interaction models: Formulations and applications\*. Dordrecht: Kluwer Academic.
+
+Ismail, N.A., Adu-Ampong, E.A., Aceska, A., 2024. The making of urban informal settlements: Critical junctures and path dependency in governing Abuja, Nigeria. Cities 147, 104789. https://doi.org/10.1016/j.cities.2024.104789
+
+Javaid, A., Creutzig, F., Bamberg, S., 2020. Determinants of low-carbon transport mode adoption: systematic review of reviews. Environ. Res. Lett. 15, 103002. https://doi.org/10.1088/1748-9326/aba032
+
+Leyk, S., Gaughan, A.E., Adamo, S.B., De Sherbinin, A., Balk, D., Freire, S., Rose, A., Stevens, F.R.,Blankespoor, B., Frye, C., Comenetz, J., Sorichetta, A., MacManus, K., Pistolesi, L., Levy, M., Tatem, A.J., Pesaresi, M., 2019. The spatial allocation of population: a review of large-scale gridded population data products and their fitness for use. Earth Syst. Sci. Data 11, 1385–1409. https://doi.org/10.5194/essd-11-1385-2019
+
+![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif)Li, S., Wang, B., Zhou, H., 2024. Decarbonizing passenger transportation in developing countries: Lessons and perspectives1. Regional Science and Urban Economics 107, 103977. [htt]{.underline}ps://doi.org[/10.1016]{.underline}![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif)/j[.re]{.underline}g[sciurbeco.2024.103977]{.underline}.
+
+Li, W., He, J., Yu, Q., Chang, Y. and Liu, P., 2021. Using POI data to identify the demand for pedestrian crossing facilities at mid-block. \*Sustainability\*, 13(23), 13256. \[https://doi.org/10.3390/su132313256\](https://doi.org/10.3390/su132313256)
+
+![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image003.gif)Lucas, K., Mattioli, G., Verlinghieri, E., Guzman, A., 2016. Transport poverty and its adverse social consequences. Proceedings of the Institution of Civil Engineers - Transport 169, 353–365. [htt]{.underline}ps://doi.org[/10.1680]{.underline}/j[tran.15.00073]{.underline}
+
+![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif)Moreno, C., Allam, Z., Chabaud, D., Gall, C., Pratlong, F., 2021. Introducing the “15-Minute City”: Sustainability, Resilience and Place Identity in Future Post-Pandemic Cities. Smart Cities 4, 93–111. [htt]{.underline}ps://doi.org[/10.3390/smartcities4010006]{.underline}
+
+Minghini, M. and Frassinelli, F., 2019. OpenStreetMap history for intrinsic quality assessment: Is OSM up-to-date? \*Open Geospatial Data, Software and Standards\*, 4(1), 9. \[https://doi.org/10.1186/s40965-019-0067-x\](https://doi.org/10.1186/s40965-019-0067-x)
+
+Nieves, J.J. and Fleischmann, M., 2022. Dasymetric mapping: An introduction in Python \\\[Colab notebook\]. Available at: \[https://colab.research.google.com/github/jjniev01/GISRUK\\\_Dasy/blob/main/src/Python\\\_version.ipynb\](https://colab.research.google.com/github/jjniev01/GISRUK_Dasy/blob/main/src/Python_version.ipynb) \\\[Accessed 13 August 2025\].
+
+![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image005.gif)Notelaers, L., Verstraete, J., Vansteenwegen, P., Tampère, C.M.J., 2024. A travel demand modeling framework based on OpenStreetMap. Discov Civ Eng 1, 26. [htt]{.underline}ps://doi.org[/10.1007]{.underline}![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif)[/s44290-024-00020-]{.underline}y
+
+OECD, African Development Bank, Cities Alliance, United Cities And Local Governments Of    Africa, 2025.![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif) Africa’s Urbanisation Dynamics 2025: Planning for Urban Expansion, West African Studies. OECD Publishing. [htt]{.underline}ps://doi.org[/10.1787/2a47845c-e]{.underline}
+
+Parnell, S. and Pieterse, E. (eds.), 2014. \*Africa’s urban revolution\*. London: Zed Books.
+
+Pojani, D. and Stead, D., 2015. Sustainable urban transport in the developing world: Beyond megacities. \*Sustainability\*, 7(6), pp.7784–7805. \[https://doi.org/10.3390/su7067784\](https://doi.org/10.3390/su7067784)
+
+Pucher, J. and Buehler, R., 2008. Making cycling irresistible: Lessons from the Netherlands, Denmark and Germany. \*Transport Reviews\*, 28(4), pp.495–528. \[https://doi.org/10.1080/01441640701806612\](<https://doi.org/10.1080/01441640701806612>)
+
+Pojani, D., Stead, D., 2015. Sustainable Urban Transport in the Developing World: Beyond             Megacities.![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image007.gif) Sustainability 7, 7784–7805. [htt]{.underline}ps://doi.org[/10.3390/su7067784]{.underline}
+
+![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif)![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image009.gif)Poom, A., Willberg, E., Toivonen, T., 2021. Environmental exposure during travel: A research review and suggestions forward. Health and Place 70, 102584. [htt]{.underline}ps://doi.org[/10.1016]{.underline}/j[.health]{.underline}place.2021.102584
+
+Pucher, J., Buehler, R., 2008. Making Cycling Irresistible: Lessons from The Netherlands, Denmark and![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image007.gif) Germany. Transport Reviews 28, 495–528. [htt]{.underline}ps://doi.org[/10.1080/01441640701806612]{.underline}
+
+Purcel, R., Croitoru, C., 2025. Evaluating Key Indicators for Urban Decarbonization: A Framework for![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif) Sustainable Cities. E3S Web Conf. 608, 05023.     [htt]{.underline}ps://doi.org[/10.1051/e3sconf/202560805023]{.underline}
+
+Rapson, D. and Muehlegger, E., 2023. Global transportation decarbonization. \*Journal of Economic Perspectives\*, 37(3), pp.163–188. \[https://doi.org/10.1257/jep.37.3.163\](https://doi.org/10.1257/jep.37.3.163)
+
+Salon, D. and Gulyani, S., 2019. Mobility, poverty, and gender: Travel “choices” of slum residents in Nairobi, Kenya. \*Transport Reviews\*, 39(6), pp.733–754. \[https://doi.org/10.1080/01441647.2019.1632927\](https://doi.org/10.1080/01441647.2019.1632927)
+
+Santos, G., Button, K. and Noll, R.G., 2008. London congestion charging. \*Brookings-Wharton Papers on Urban Affairs\*, pp.177–234. Washington, DC: Brookings Institution Press. \[https://doi.org/10.1353/urb.0.0003\](https://doi.org/10.1353/urb.0.0003)
+
+Shauri, J. and Mimano, C., 2022. Optimising BRT operations in Dar es Salaam. \*Transport Journal\*, February. Available at: \[https://africa.itdp.org/optimising-brt-operations-in-dar-es-salaam/\](https://africa.itdp.org/optimising-brt-operations-in-dar-es-salaam/) \\\[Accessed 6 September 2025\].
+
+Sovacool, B.K., Martiskainen, M., Hook, A. and Baker, L., 2019. Decarbonization and its discontents: A critical energy justice perspective on four low-carbon transitions. \*Climatic Change\*, 155(4), pp.581–619. \[https://doi.org/10.1007/s10584-019-02521-7\](https://doi.org/10.1007/s10584-019-02521-7)
+
+Stevens, F.R., Gaughan, A.E., Linard, C. and Tatem, A.J., 2015. Disaggregating census data for population mapping using Random Forests with remotely-sensed and ancillary data. \*PLOS ONE\*, 10(2), e0107042. \[https://doi.org/10.1371/journal.pone.0107042\](https://doi.org/10.1371/journal.pone.0107042)
+
+Thomas, H., Carmona Aparicio, L.G., Creutzig, F., Hara, T., Hayashi, A., Ludovique, C., Martinez, L.M., Natsuo Kishimoto, P., Niamir, L., Saheb, Y. and Trouvé, M., 2024. Models and methods for transport demand and decarbonisation: A review. \*Environmental Research Letters\*, 19(9), 093005. \[https://doi.org/10.1088/1748-9326/ad6b3a\](https://doi.org/10.1088/1748-9326/ad6b3a)
+
+Transport for London (TfL), 2020. \*Travel in London: Report 13\*. London: Transport for London. Available at: \[https://content.tfl.gov.uk/travel-in-london-report-13.pdf\](https://content.tfl.gov.uk/travel-in-london-report-13.pdf) \\\[Accessed 6 September 2025\].
+
+Visagie, C., Krause, P., Zhuwaki, N. and Schulenburg, D., 2021. \*Africa Urban Mobility Observatory – Role of Informal Paratransit Report\*. High Volume Transport Applied Research Programme, UKAid/FCDO. Available at: \[https://gender.cgiar.org/publications/africa-urban-mobility-observatory-role-informal-paratransit-repor\](https://gender.cgiar.org/publications/africa-urban-mobility-observatory-role-informal-paratransit-repor) \\\[Accessed 1 September 2025\].
+
+![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image011.gif)Wardrop, N.A., Jochem, W.C., Bird, T.J., Chamberlain, H.R., Clarke, D., Kerr, D., Bengtsson, L., Juran, S., Seaman, V., Tatem, A.J., 2018. Spatially disaggregated population estimates in the absence of national population and housing census data. Proc. Natl. Acad. Sci. U.S.A. 115, 3529–3537. [htt]{.underline}ps://doi.org![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif)[/10.1073/]{.underline}pnas.1715305115
+
+![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image013.gif)Yang, S., Zhang, W., Wu, S., Hu, X., 2025. Carbon emissions from express logistics: Estimation and spatial analysis using origin-destination transportation flows. Transport Policy 171, 970–985. [htt]{.underline}ps://doi.org![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif)[/10.1016]{.underline}/j[.tran]{.underline}pol.2025.07.002
+
+Watts, D.J. and Strogatz, S.H., 1998. Collective dynamics of ‘small-world’ networks. \*Nature\*, 393(6684), pp.440–442. \[https://doi.org/10.1038/30918\](https://doi.org/10.1038/30918)
+
+World Bank, 2023. \*Nigeria overview\*. Washington, DC: World Bank. Available at: \[https://www.worldbank.org/en/country/nigeria/overview\](https://www.worldbank.org/en/country/nigeria/overview) \\\[Accessed 23 August 2025\].
+
+World Bank, 2024. \*World Bank country and lending groups: Country classification by income\*. Washington, DC: World Bank. Available at: \[https://datahelpdesk.worldbank.org/knowledgebase/articles/906519\](https://datahelpdesk.worldbank.org/knowledgebase/articles/906519) \\\[Accessed 15 August 2025\].
+
+World Economic Forum (WEF), 2024. \*Global Risks Report 2024\*. Geneva: World Economic Forum. Available at: \[https://www.weforum.org/reports/global-risks-report-2024\](https://www.weforum.org/reports/global-risks-report-2024) \\\[Accessed 28 August 2025\].
+
+Zhao, X., Mahendra, A., Godfrey, N., Dalkmann, H., Rode, P. and Floater, G., 2023. \*Unlocking the power of urban transport systems for better growth and a better climate\*. New Climate Economy. Available at: \[https://newclimateeconomy.net/sites/default/files/2023-08/Unlocking-the-power-of-urban-transport-systems\\\_web.pdf\](https://newclimateeconomy.net/sites/default/files/2023-08/Unlocking-the-power-of-urban-transport-systems_web.pdf) \\\[Accessed 20 August 2025\].
+
+Akinbusola, C.O., Adams, C.A. and Abbabio-Donkor, A. (2025). Assessment of Congestion Dynamics in Abuja-Nyanya, FCT, Nigeria. Presented at the 2nd AfroSAFE Conference, Winneba, Ghana, 12–15 August 2025.

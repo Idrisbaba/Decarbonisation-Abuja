@@ -1,0 +1,32 @@
+---
+title: "Conclusion"
+author: "Idris Baba"
+format: html
+editor: visual
+---
+
+# **5.0 Conclusion**
+
+The OD Matrix and network analyses confirm that Abuja’s mobility system is shaped by structural imbalances: car-dependence, monocentric development, and the spatial exclusion of peripheral wards. High trip volumes into the Central Business District, combined with long-distance commuting from satellite towns such as Nyanya and Lugbe, reflect both carbon lock-in and social inequity. These patterns highlight Abuja’s dual challenge: reducing transport emissions while addressing systemic accessibility gaps.
+
+The uneven distribution of education, healthcare, and retail services demonstrates Abuja’s divergence from the 15-minute city principle (Moreno et al., 2021). While central wards approximate multi-purpose accessibility, peripheral areas lack any service clusters within a 15-minute travel radius, forcing residents into long, carbon-intensive commutes. This reinforces the conclusion that decarbonisation cannot be achieved through technology alone: electrified buses or CNG taxis will have limited effect if residents must still travel 30–40 km daily to reach essential services.
+
+Embedding the principles of the 15-minute city offers a potential pathway for Abuja. Establishing decentralised, mixed-use neighbourhood hubs in peripheral wards could simultaneously reduce carbon-intensive long-distance trips and improve social equity. Aligning this with electrified mass transit along major radial corridors would allow Abuja to pursue both efficiency and justice in its decarbonisation pathway.
+
+Critically, this dissertation has shown that Nigeria’s Energy Transition Plan, while ambitious in its electrification targets, will falter if spatial and equity dimensions are ignored. Decarbonisation in Abuja must therefore advance on three fronts:
+
+1.  
+
+2.  Technological; deploying electric and CNG buses along high-betweenness corridors to cut system-wide emissions.
+
+3.  
+
+4.  Spatial; decentralising key services to create 15-minute accessible zones in peri-urban wards, reducing forced long-distance travel.
+
+5.  
+
+6.  Institutional; strengthening governance and financing to ensure that pilots evolve into systemic reforms.
+
+7.  
+
+Answering the central research question, Abuja’s decarbonisation pathway will depend not just on cleaner vehicles but on tackling the structural drivers of unsustainable mobility: monocentric planning, inequitable service distribution, and weak integration of informal transport. Only by embedding accessibility and equity at the core of transport planning can Abuja move from a car-dependent, high-carbon city towards a multimodal, inclusive, and low-carbon future.

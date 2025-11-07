@@ -1,0 +1,146 @@
+---
+title: "Literature Review"
+author: "Idris Baba"
+format: html
+editor: visual
+---
+
+# **2.0 Literature Review**
+
+## **2.1 Introduction**
+
+Transport is rapidly emerging as a major contributor to global greenhouse gas emissions, responsible for nearly one-quarter of energy-related CO₂ output (Rapson and Muehlegger, 2023). These are driven by continuous urban growth and increasing need for transportation, especially across developing regions, emissions are expected to drastically rise in the absence of substantial policy shifts (International Transport Forum, 2021). As urban areas expand and transport demand increases, decarbonising mobility has become a centre of attention for climate action, sustainable urban development, and integrated planning frameworks (Zhao et al., 2023; United Nations, 2015). Although high-income nations have made strides through vehicle electrification, improved fuel efficiency, and enhanced public transit systems, the decarbonisation pathways for low-and middle-income countries (LMICs) remain less defined and more complex (Rapson and Muehlegger, 2023).
+
+Among LMICs, Nigeria provides a critical case for understanding the complexities of urban mobility and transport decarbonisation. Nigeria, Africa’s most populous nation and largest economy, exemplifies these challenges. Its cities continue to struggle with rapid growth, inadequate infrastructure, and persistent mobility constraints (World Bank, 2023; United Nations, 2022). Abuja, chosen as the federal capital in the late 1970s to relieve pressure on Lagos, has since expanded rapidly, with residential areas spreading outward from the original planned core (Federal Republic of Nigeria, 1979). Much of this growth has been characterized by informal settlement extending on the city’s edges, alongside a heavy dependence on informal transport modes such as minibuses and motorcycles, which remain central to everyday mobility patterns (Ismail, Adu-Ampong, and Aceska, 2024). Abuja’s growth hasn’t been even, so many homes and jobs are farther apart. This leads to long travel times as stated earlier, which increase pollution and make things harder for many people. The city also lacks good public transport and planning strategies, making it tough to cut transport emissions.
+
+This literature review critically examines existing research on transport decarbonisation, structured into four themes:
+
+1.     Global trends in transport decarbonisation
+
+2.      LMIC-specific experiences and challenges,
+
+3.     Modal shift as a key pathway, and
+
+4.     knowledge gaps and emerging directions for Abuja.
+
+Beyond summarising existing scholarship, it evaluates methodologies, compares perspectives, and highlights research gaps that this dissertation seeks to address. The overarching goal is to situate Abuja’s decarbonisation challenge within both global frameworks and local realities, thereby identifying methodological approaches and conceptual insights to guide the case study analysis.
+
+## **2.2 Global Trends in Transport Decarbonisation**
+
+### **2.2.1 The global policy landscape**
+
+Transport decarbonisation has emerged as a central concern in climate policy, with the Paris Agreement (2015) and subsequent COP summits reinforcing the urgency of reducing emissions from this sector. In high-income countries, regulatory measures such as the European Union’s strengthened CO₂ performance standards for new vehicles (Regulation 2023/851) and California’s zero-emission vehicle mandate demonstrate strong policy-driven transitions. At the international level, frameworks like the Avoid-Shift-Improve (ASI) model have been adopted by organizations including the World Bank and the International Energy Agency (World Bank, 2023).
+
+The ASI framework offers a systematic way of classifying interventions: Avoid unnecessary travel through urban planning and telecommuting; Shift towards sustainable modes such as public transport, walking, and cycling; and Improve vehicle and fuel technologies. While electrification dominates policy narratives in the Global North, there is increasing recognition that Avoid and Shift measures deliver more immediate co-benefits, particularly in congested urban areas (Fazekas, Bataille and Vogt-Schilb, 2022). However, there is a strong argument that the overwhelming focus on technological fixes risks sidelining structural and behavioural changes that may be more feasible and impactful in many contexts (Creutzig et al., 2019; Sovacool et al., 2019). The challenge, therefore, lies not only in advancing global policy frameworks but also in assessing how they can be meaningfully adapted to the mobility realities of low- and middle-income countries, where infrastructure, governance, and urban growth dynamics presents different conditions (Pojani and Stead, 2015; Nieuwenhuijsen et al., 2016).
+
+### **2.2.2 Research and methodological approaches**
+
+The academic literature on transport decarbonisation globally is quite vast and methodologically diverse. Integrated assessment models (IAMs) have been used to simulate global energy and transport transitions, linking macroeconomic growth, energy systems, and emissions trajectories (Thomas, 2024). However, these models often lack fine-grained urban and behavioural dimensions, limiting their applicability to city-level contexts. Complementary methods such as transport demand models and origin-destination (OD) analyses provide greater resolution at urban scales, capturing daily mobility dynamics (Rong et al., 2024).
+
+Bibliometric reviews (Wardrop et al., 2021; Transport Decarbonisation Bibliometric Review, 2023) reveal that global research is heavily concentrated in high-income countries, with limited representation of Africa and other LMICs. This skew reflects both data availability and funding biases, raising questions about the transferability of solutions across regions. These modelling and bibliometric approaches are valuable for charting global pathways, but they often fail to capture the lived realities of mobility in rapidly urbanising LMIC contexts. For instance, while electrification is projected to deliver deep decarbonisation in Europe and China, scholars caution against technological determinism in contexts where grid reliability and affordability remain barriers (Agyekum et al., 2023).
+
+### **2.2.3 Lessons and debates**
+
+Three key lessons emerge from the global literature. First, technological substitution alone is insufficient: electrification without modal shift risks perpetuating congestion, land-use inefficiency, and inequities (WEF, 2024). Second, systemic change is dependent on multi-level governance, requiring alignment between urban planning, fiscal policy, and industrial strategy (Rapson and Muehlegger, 2023). Third, global decarbonisation scenarios tend to underestimate the political economy of transport, including resistance from automobile lobbies and public opposition to restrictive measures such as fuel taxes or congestion pricing.
+
+For LMICs, these debates highlight the importance of context-sensitive pathways. Rather than importing solutions from the Global North wholesale, scholars argue for adaptive strategies that integrate informal transport, affordability constraints, and rapid urbanisation dynamics (Visagie et al., 2021). This situates Abuja within the broader global conversation: the challenge extends beyond technology to the institutional and social realms.
+
+## **2.3 Transport Decarbonisation in Low- and Middle-Income Countries (LMICs)**
+
+### **2.3.1 Distinct challenges in LMIC contexts**
+
+In contrast to high-income countries, LMICs face structural barriers that complicate transport decarbonisation. Rapid urban growth, weak institutions, and financial constraints limit the capacity to invest in large-scale low-carbon infrastructure (HVT, 2023). Informal transport systems such as the minibuses, motorcycle taxis, and shared tricycles dominate mobility in many African cities. These systems provide affordable and flexible services but are characterized by inefficiency, high emissions, and limited safety measure (Visagie et al., 2021).
+
+Moreover, vehicle fleets in LMICs are often composed of second-hand imports from high-income countries, which undermines emissions standards and prolongs the dominance of internal combustion engines (Agyekum et al., 2023). Energy system constraints further compound the challenge: unreliable electricity grids and limited charging infrastructure undermine the feasibility of large-scale electric vehicle (EV) adoption (Okereke et al., 2022).
+
+### **2.3.2 Evidence from Africa and Nigeria**
+
+Within Africa, studies continue to emphasise on the dual role of informal paratransit as both a lifeline and a barrier to decarbonisation. The Africa Urban Mobility Observatory (2021) piloted big-data tools in Lagos, Kigali, and Kinshasa to map informal networks, quantify emissions, and benchmark performance. Their findings highlight the significant contribution of paratransit vehicles to CO₂ and local pollutants, while also noting that reformative efforts must balance inclusivity and environmental goals. In Nigeria, urban transport is shaped by fragmented planning and low public investment. Lagos has pioneered Bus Rapid Transit (BRT), demonstrating potential for modal shift but facing persistent capacity and governance challenges (World Bank, 2020). Studies of Ibadan’s peri-urban households reveal that socioeconomic variables such as income, car ownership, and household size significantly shape travel choices (Oladeji et al., 2022). These insights are especially relevant to Abuja, where rising peri-urbanisation and car dependency intersect with informal settlement growth (Ismail et al., 2024).
+
+### **2.3.3 Methodological approaches**
+
+LMIC research increasingly relies on mixed method approaches to compensate for data scarcity. Household travel surveys remain the gold standard but are costly and rare. Instead, scholars combine participatory mapping of informal routes, gridded population datasets (e.g., WorldPop), and mobile phone call detail records (CDRs) to estimate travel demand (Wardrop et al., 2020; Leyk et al., 2019). Advances in synthetic data generation, such as origin-destination (OD) matrix modelling via machine learning (Rong et al., 2024), offer further opportunities to fill gaps where conventional surveys are absent. The emphasis on informal systems has also led to innovative data collection methods. In Lagos, for instance, intercept surveys and crowdsourced mapping apps were combined to construct General Transit Feed Specification (GTFS) datasets for danfo minibuses, enabling their integration into transport models (Visagie et al., 2021). These methods demonstrate practical tools that could be adapted in Abuja.
+
+### **2.3.4 Emerging debates**
+
+A key debate within LMIC literature concerns the relative emphasis on technology-led pathways (e.g., electrification, CNG conversion) versus systemic reforms (e.g., land-use planning, mass transit expansion). While EVs attract policy attention, evidence suggests that without concurrent investment in public transport and demand reduction, electrification risks reproducing inequities and congestion (Agyekum et al., 2023). Thus, the consensus in LMIC literature tilts toward integrated strategies that balance near-term incremental gains (such as CNG taxis in Abuja) with longer-term systemic reforms.
+
+## **2.4. Modal Shift as a Decarbonisation Pathway**
+
+### **2.4.1 Rationale and global experiences**
+
+Modal shift, which encourages movement from high-emission modes such as private cars to low-emission alternatives including public transport, walking, cycling, and rail, is widely regarded as a core strategy for transport decarbonisation and forms a central pillar of the Avoid-Shift-Improve (ASI) framework. Evidence suggests that modal shift delivers faster and more equitable emissions reductions than vehicle technology substitution alone (World Bank, 2023; WEF, 2024). European cities have pioneered measures such as congestion charging and integrated ticketing in London (Transport for London, 2020), sustained investment in cycling infrastructure in Copenhagen and Amsterdam (Pucher and Buehler, 2008), and the promotion of the “15-minute city” concept in Paris (Moreno et al., 2021). Asian megacities such as Seoul and Guangzhou have also demonstrated the scalability of Bus Rapid Transit (BRT) and metro systems, showing that sustained modal shift is achievable under strong governance.
+
+Yet debates continue about the model transferability to low- and middle-income countries (LMICs). Replicating these approaches remains challenging due to weak institutional capacity, funding constraints, and the dominance of informal transport (Pojani and Stead, 2015; Lucas et al., 2016; World Bank, 2020). Scholars further highlight political resistance, fragmented governance, and socio-cultural preferences for private car ownership as barriers that complicate implementation (Javaid et al., 2020; Tazzie, Adugna and Woldetensae, 2025). For Abuja, where rapid urbanisation is coupled with rising car dependency and informal mobility systems, the effectiveness of modal shift strategies will hinge not only on adapting global lessons to local governance and socio-economic realities but also on addressing affordability, behavioural patterns, and deep-rooted institutional constraints.
+
+### **2.4.2 Public transport and rail**
+
+Bus Rapid Transit (BRT) has been identified as the suitable option for LMIC cities due to its relatively low cost and operational flexibility. Studies in Lagos demonstrate that BRT corridors not only reduce emissions but also improve travel times and affordability (World Bank, 2020). Similar evidence from Dar es Salaam and Johannesburg indicates that BRT can support equitable mobility when properly integrated with wider networks (Salon and Gulyani, 2019). However, scholars caution that the lack of integration with informal systems, poor maintenance, and governance fragmentation often undermine sustainability outcomes (Lucas et al., 2016; Visagie et al., 2021).
+
+Rail, by contrast, offers high-capacity and long-term decarbonisation potential. Yet its success depends heavily on sustained political commitment, funding, and urban density thresholds (Pojani and Stead, 2015). The Abuja Light Rail launched in 2018 but stalled within a few years illustrates both the promise and pitfalls of rail-based modal shift in African contexts. For Abuja, the lesson is that large-scale rail investments must be embedded within broader institutional reforms and complemented by affordable feeder systems to avoid becoming stranded assets.
+
+### **2.4.3 Active transport and land-use planning**
+
+Urban form strongly influences modal choice, with high-density, mixed-use layouts shown to encourage walking, cycling, and public transport usage (Cervero and Kockelman, 1997). The “15-minute city” model reinforces this, emphasizing proximity to essential services (Allam et al., 2022; Moreno et al., 2021). Though rooted in European frameworks, these principles can be adapted to LMIC contexts if informal settlements and land tenure complexities are thoughtfully addressed (Javaid et al., 2020).
+
+Nonetheless, critics emphasized that transferring compact city models in rapidly urbanizing African cities risk overlooking urgent issues of housing affordability and legal insecurity (Parnell and Pieterse, 2014). In Abuja, the sprawling peri-urban form and escalating car dependency underscores the necessity of integrating land-use and transport planning. Without intervention, active transport strategies may remain underutilised and exacerbate inequality and carbon lock-in.
+
+### **2.4.4 Freight and logistics**
+
+Freight contributes significantly to transport emissions. The Urban Transport Group (2022) emphasises key interventions such as modal shift to rail or water, consolidation centres, and fiscal incentives that can boost efficiency and reduce emissions. In LMICs, data shortages and fragmented infrastructure planning are major obstacles, particularly in rapidly growing cities (World Economic Forum, 2024). Evaluations of clean logistics solutions like the use of electric vehicles in urban consolidation schemes in London demonstrate substantial gains in reducing distance, time, and CO₂ emissions (Nguyen, 2021). In Abuja, where freight growth outpaces policy coordination and remains largely informal, these findings suggest urgent need for integrated, data-driven strategies to manage logistics sustainably.
+
+### **2.4.5 Methodologies: Origin-Destination and network analysis**
+
+Modal shift studies have traditionally relied on origin-destination (OD) matrices to model travel demand. In LMIC contexts, these are increasingly constructed using mobile phone data, GPS traces, and synthetic modelling to compensate for the scarcity of conventional household surveys (Rong et al., 2024). While these datasets offer large-scale coverage, scholars caution that they may under-represent vulnerable populations without reliable mobile access, making validation against household surveys and traffic counts essential for accuracy (Mayorov and Saprykin, 2021).
+
+Complementary methods such as network analysis using OSMnx (Boeing, 2025) measure connectivity, accessibility, and centrality of street networks, helping to identify priority areas where non-motorised transport (NMT) investments can maximise accessibility. Yet critics argue that these models often struggle to capture the fluid, demand-responsive character of informal transport systems that dominate many African cities (Lucas et al., 2016).
+
+Taken together, OD modelling and network analysis provide powerful but partial methodological tools for Abuja. They enable richer understanding of travel flows and modal shift potential despite data constraints, but their effectiveness will depend on how well they are adapted to informal mobility dynamics and socio-economic diversity in rapidly urbanising LMIC contexts.
+
+## **2.5 Knowledge Gaps for Abuja and Emerging Directions**
+
+### **2.5.1 Historical and institutional context**
+
+Abuja was conceived as a planned capital, yet implementation has deviated significantly from the Abuja Master Plan (1979). Critical junctures in governance, including the Land Use Act (1978), shaped settlement patterns and reinforced socio-spatial inequalities (Ismail et al., 2024). Informal settlements have proliferated, undermining attempts at integrated urban planning. These dynamics directly affect transport: low-income residents are displaced to peri-urban fringes, resulting in long commutes reliant on informal paratransit.
+
+### **2.5.2 Data scarcity and methodological challenges**
+
+Unlike Lagos, Abuja lacks comprehensive transport surveys or OD datasets. Population data are inconsistent due to delayed census exercises, requiring reliance on modelled datasets (Wardrop et al., 2020). Without robust demand data, planning for decarbonisation is hindered. This creates both a challenge and a methodological opportunity: leveraging hybrid approaches that combine participatory mapping, mobile phone data, and synthetic OD models.
+
+### **2.5.3 Policy initiatives and their limitations**
+
+Nigeria’s Energy Transition Plan (ETP) commits to carbon neutrality by 2060, with targets for electrification and biofuel blending in the transport sector. Abuja has seen pilot projects such as CNG taxi conversions and the commissioning of a light rail line. Yet, these initiatives have suffered from weak follow-through, financing gaps, and limited integration with informal systems (World Bank, 2020). The BRT pilot in Abuja remains in its preliminary stage, lacking the scale to effect systemic modal shift.
+
+### **2.5.4 Equity and governance considerations**
+
+A recurring theme in Abuja is equity. Transport policies often marginalize vulnerable groups women, low-income households, informal workers who depend heavily on informal transport. Without explicit equity integration, decarbonisation risks reinforcing exclusion. Approaches such as planning for equitable decarbonisation (Thomas, 2024) and participatory foresight methods (e.g., e-backcasting) offer promising ways to align climate goals with social justice.
+
+### **2.5.5 Emerging directions**
+
+Future research and practice in Abuja should prioritize:
+
+1.  
+
+2.  Hybrid data methods: Combining limited surveys, big data (CDRs, GPS), and synthetic OD generation to overcome data scarcity.
+
+3.  
+
+4.  Integration of informal transport: Mapping and formalizing paratransit to reduce emissions while maintaining accessibility.
+
+5.  
+
+6.  Network-based planning: Applying accessibility and connectivity metrics to guide targeted NMT and public transport investments.
+
+7.  
+
+8.  Participatory governance: Embedding equity and inclusivity into decarbonisation strategies through stakeholder-driven scenario design.
+
+9.  
+
+## 2.6. Conclusion
+
+The literature on transport decarbonisation has clearly shown global trends centred on electrification, modal shift, and systemic urban planning. Yet, low- and middle-income countries (LMICs) such as Nigeria face unique challenges that necessitate adaptive, context-specific strategies. In most African cities, informal transport dominates, data scarcity persists, and institutional weaknesses undermine effective planning.
+
+For Abuja, the literature highlights a serious gap: the absence of robust OD data, outdated population statistics, underdeveloped mass transit, weak integration of informal systems, and persistent equity challenges. Emerging methodologies such as hybrid OD modelling, network analysis, and participatory planning offer promising tools to bridge these gaps. Most importantly, Abuja’s decarbonisation pathway must combine near-term pragmatic steps (CNG conversion, paratransit reform) with longer-term structural shifts (BRT and rail expansion, land-use integration, electrification).
+
+Thus, while global and LMIC scholarship provides valuable lessons, Abuja remains under-researched as a case where informal transport, data scarcity, and equity concerns intersect. This dissertation will contribute by situating Abuja within global debates while advancing a methodological framework tailored to data-sparse, informalised contexts. By applying innovative OD modelling and equity-sensitive planning approaches, it seeks to chart a viable and inclusive decarbonisation pathway for Nigeria’s capital.

@@ -1,0 +1,37 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Decarbonisation of Transportation in LMICs: Abuja"
+  description: "Reproducible research using open geospatial data and origin-destination modelling to explore sustainable mobility in Abuja, Nigeria."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: introduction.qmd
+        text: Introduction
+      - href: literature.qmd
+        text: Literature
+      - href: methods.qmd
+        text: Methods
+      - href: results.qmd
+        text: Results
+      - href: OD_workflow.qmd
+        text: R Workflow
+      - href: conclusion.qmd
+        text: Conclusion
+      - href: references.qmd
+        text: References
+      - href: about.qmd
+        text: About
+  page-footer:
+    center: "© 2025 Idris | Built with Quarto & RStudio"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true

@@ -1,0 +1,293 @@
+---
+title: "Methodology"
+author: "Idris Baba"
+format: html
+editor: visual
+---
+
+# **3.0 Methodology**
+
+## **3.1 Overview of Methodological Approach**
+
+Figure 3.1 shows the processes involved in model building
+
+Figure 3.1 shows a clear workflow of all the processing essential to get the required dataset for building our origin destination model.
+
+Understanding mobility patterns is critical for designing sustainable, low-carbon transport systems. In Abuja, rapid urbanisation has intensified travel demand, yet data on commuting flows, trip purposes, and accessibility gaps remain very limited. This absence of detailed empirical data limits evidence-based planning and hinders the identification of priority corridors for decarbonisation.
+
+To address this challenge, this study adopts an Origin-Destination (OD) modelling framework to estimate flows between administrative wards and key Points of Interest (POIs). By capturing potential trip interactions, the OD model highlights high-demand corridors, underserved areas, and accessibility gaps. These insights provide evidence for interventions such as public transport upgrades, cycling infrastructure, and pedestrian facilities.
+
+The methodological choice is guided by two considerations. First, the gravity model is a long-established tool for modelling spatial interaction under conditions of limited data because it is simple to use and transferable (Fotheringham and O’Kelly, 1989; Batty, 1976). Unlike data-intensive transport demand models, the gravity framework requires only population, distance, and basic land-use proxies, making it particularly suited for Abuja where census and survey data are scarce. Batty (2016) further describes such models as “laboratory substitutes,” enabling planners to test future urban scenarios when real-world experiments or large-scale trials are not feasible.
+
+Secondly, the study draws from network science, framing Abuja’s transport infrastructure as a complex system. Empirical research shows that urban mobility networks often exhibit small-world properties (Watts and Strogatz, 1998) and scale-free hierarchies (Barabási and Albert, 1999). This justifies the use of OSMnx and netwrokx Python library to model connectivity, accessibility, and routing dynamics using OpenStreetMap open data. These approaches allow meaningful analysis even in the absence of traffic counts, providing insights into how urban form and network topology structure accessibility.
+
+The final workflow integrates WorldPop gridded population estimates, OSM-derived POIs, and GRID3 ward boundaries into a gravity-based OD model, implemented in Python (OSMnx, NetworkX, GeoPandas). This design is therefore both theoretically grounded and practically suited to data-scarce LMIC contexts like Abuja.
+
+## \![A map of a bird
+
+AI-generated content may be incorrect.\](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif){alt="A map of a bird
+
+AI-generated content may be incorrect."} 3.2 Study Area
+
+Abuja, as shown in (figure 3.2 2 ) the Federal Capital Territory (FCT) of Nigeria, is experiencing rapid urbanisation and population growth. Between 2010 and 2019, the city’s built-up area expanded by 30.93%, and as of 2023, its population growth rate was estimated at 5% (Bashir et al., 2021). These dynamics have produced challenges including congestion, strain on public transportation, and rising emissions; understanding transportation demand is therefore very important for sustainable planning. By modelling mobility patterns, the study provides insights to guide policy interventions and infrastructure investment.
+
+## 3.**3 Data Sources and Preprocessing**
+
+### **3.3.1 Data Sources used in our study**
+
+Table 3.2
+
+Table 3.2   Table 3.2 shows the datasets used in our model.: these gives a detail of preliminary data collection that was used such as population, POI’s, wards and road network       
+
+<table>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><p>Datasets</p></td>
+<td></td>
+<td><p>Source / Format</p></td>
+<td></td>
+<td><p>Key Preprocessing Steps</p></td>
+<td></td>
+<td><p>Output / Usage</p></td>
+<td></td>
+<td><p>Dependency</p></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><p>1. Population (Raster)</p></td>
+<td></td>
+<td><p>(WorldPop, 2025)</p></td>
+<td></td>
+<td><p>Raster zonal statistics, aggregated to ward boundaries</p></td>
+<td></td>
+<td><p>Ward-level population totals</p></td>
+<td></td>
+<td><p>Depends on Wards (for boundaries)</p></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><p>2. POIs (Points/Polygons)</p></td>
+<td></td>
+<td><p>OpenStreetMap (OSM, 2025)</p></td>
+<td></td>
+<td><p>Filter relevant categories (schools, markets, etc.), convert polygons to centroids, snap to nearest road nodes</p></td>
+<td></td>
+<td><p>POI nodes connected to road network</p></td>
+<td></td>
+<td><p>Depends on Roads (for snapping)</p></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><p>3. Roads (Vector / Shapefile)</p></td>
+<td></td>
+<td><p>OpenStreetMap (OSM, 2025)</p></td>
+<td></td>
+<td><p>Clean with GeoPandas, simplify geometries, align CRS, convert to graph using NetworkX</p></td>
+<td></td>
+<td><p>Road network graph with nodes/edges</p></td>
+<td></td>
+<td><p>Independent dataset (central input)</p></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><p>4. Wards (Vector / Shapefile)</p></td>
+<td></td>
+<td><p>Administrative boundaries</p>
+<p>(Grid 3, 2025)</p></td>
+<td></td>
+<td><p>Calculate ward centroids, snap to nearest road nodes</p></td>
+<td></td>
+<td><p>Ward centroids aligned with road network</p></td>
+<td></td>
+<td><p>Depends on Roads (for snapping)</p></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+### **3.3.2 Gridded Population Data Sourced from ( WorldPop)**
+
+Nigeria lacks recent census data, necessitating the use of WorldPop gridded estimates. These are generated through bottom-up population models (see Figure 3.1) that integrate census microdata, remotely sensed imagery, and settlement data. Using dasymetric weighting and Random Forest algorithms, aggregated counts are redistributed to \~100 m grid cells, producing finer spatial detail than official aggregates (Nieves and Fleischmann, 2022; Stevens et al., 2015).
+
+*As shown in Figure 3.2*, the gridded population estimates combine census surveys, settlement morphology, and geospatial covariates such as elevation, accessibility, vegetation to generate spatially disaggregated estimates. This enables detailed population surfaces to serve as inputs for trip generation analysis in contexts where household travel surveys or OD datasets are unavailable.
+
+Although widely used, these estimates have limitations. In areas with limited training data, such as informal settlements or remote villages, populations may be systematically underrepresented (Leyk et al., 2019). Nevertheless, their consistency, open availability, and fine resolution make them highly valuable in data-scarce environments such as Abuja, where they provide essential baseline data for transport modelling and planning.
+
+Figure 3.2 : Workflow for generating gridded population estimates. Source: GRID3.
+
+### **3.2. Points of Interest (POIs).**
+
+In Abuja, where observed trip data are unavailable, Points of Interest (POIs) serve as proxies for trip attractors. POIs represent destinations such as schools, hospitals, markets, and government offices that draw daily mobility flows; their density and categorisation enable the estimation of “attractiveness” in OD models, allowing integration of fine-grained behavioural patterns into transport analysis (Notelaers et al., 2024).
+
+Beyond modelling, POI data can highlight where pedestrian and cycling infrastructure is most needed, especially in clusters of social services or markets (Li et al., 2021). In this study, 302 POIs were extracted from OSM, processed with GeoPandas, and aligned with the road network graph to act as trip destinations.
+
+### **3.3 Road Network Data**
+
+The road network for Abuja was sourced from OpenStreetMap and processed using OSMnx 2.0.6 (Boeing, 2025). The raw dataset included 62,774 nodes and 156,507 edges, representing the city's full street infrastructure. To ensure spatial accuracy and analytical efficiency, the network was cleaned using GeoPandas to remove invalid geometries, simplified to reduce topological complexity, and clipped to align precisely with the study boundary.
+
+The cleaned network was then converted into a NetworkX graph, enabling advanced connectivity analysis and shortest-path computations. This graph served as the spatial backbone of the origin destination (OD) model, allowing flow scores and accessibility metrics to be assigned along realistic travel corridors rather than abstract Euclidean paths.
+
+Due to the large size of the dataset, processing was optimized using Python’s parallelisation libraries, which significantly reduced computation time and allowed for scalable analysis across multiple wards and POIs. The resulting network provided a robust foundation for modeling commuting flows, evaluating transport accessibility, and identifying high-demand corridors within Abuja.
+
+## **3.4 Origin-Destination Modelling Framework**
+
+OD modelling provides a structured way to represent flows between geographic origins and destinations. An OD matrix captures the number of trips between locations, providing insights into demand, accessibility, and potential intervention points (Lovelace and Ellison, 2018). This is particularly important in Abuja, where the absence of OD datasets and the high cost of travel surveys limit conventional planning methodologies.
+
+This study applies a gravity model (as shown in figure 3.2) , which assumes interaction between locations increases with population at the origin and decreases with distance to the destination. Gravity models are widely used in urban mobility analysis because they balance parsimony with explanatory power, requiring only population and distance inputs yet producing realistic patterns of spatial interaction (Fotheringham and O’Kelly, 1989)
+
+The formulation adopted is:
+
+Where *wₚₒₚ* is the population of the origin ward, and *dist* is the shortest-path distance in meters between the ward and the nearest point of interest (POI) on the road network. The exponential term *exp(−dist / 10,000)* applies a decay factor with a 10 km scale parameter, reducing the likelihood of travel as distance increases.
+
+The exponential decay function was chosen over alternative power-law formulations because it better reflects short-distance, intra-urban trips, where travel probability drops off rapidly with distance (de Vries, Nijkamp and Rietveld, 2009). A 10 km scale parameter was applied following previous applications in African and Asian cities, where this threshold approximates the typical upper bound for daily commutes (Salon and Gulyani, 2019; Lucas et al., 2016).
+
+By operationalising this formulation with ward-level population (for trip generation) and POIs (for trip attraction), the model leverages available open datasets to approximate real mobility dynamics in the absence of survey-based OD matrices.
+
+This framework therefore not only produces estimated flow scores for each OD pair but also provides a replicable methodology suited to other data-scarce African cities. In Abuja specifically, it enables the identification of high-demand corridors and accessibility gaps, offering actionable evidence for prioritising investments in transit routes, cycling networks, and pedestrian infrastructure.
+
+Figure 3.3 showing the python formula for flow score generation which give the basis for the modellinhg and visualisation
+
+## **3.4 Origin-Destination Pair Generation**
+
+1.  
+
+2.  Origins: Wards were defined using GRID3 boundary shapefiles. Populations were aggregated from WorldPop raster estimates using *zonal statistics*, with missing values imputed using ward averages. Centroids were computed and snapped to the nearest road network node.
+
+3.  
+
+4.  Destinations: POIs filtered from OSM were converted into centroids and snapped to network nodes.
+
+5.  
+
+6.  Pairing: Each of Abuja’s 78 wards was paired with 302 POIs, generating 23,556 possible OD pairs. Distances were calculated using Dijkstra’s algorithm in NetworkX, yielding a distance matrix.
+
+7.  
+
+8.  Filtering: Pairs beyond 150 km or with negligible flows were excluded, leaving 6,953 significant OD pairs for analysis.
+
+9.  
+
+10. Outputs: Flow scores and geospatial LineStrings were stored in CSV and GeoPackage formats, forming the OD matrix and mapped visualisations.
+
+11. 
+
+## **3.5. Computational workflow in google collab Python environment**
+
+The analysis was carried out in Google Colab because it provides a flexible, cloud-based Python environment that supports collaboration and easy access to computational resources. Key Python packages were chosen for their specialized strengths: Pandas and GeoPandas for efficient data manipulation, OSMnx and NetworkX for handling complex spatial networks, and Rasterio with Rasterstats for processing raster data. Folium was used to generate interactive maps that allowed results to be explored intuitively. CSV matrices and processed GeoPackages were produced to ensure the outputs were both reusable and compatible with common GIS tools. Finally, R and RStudio were used to create cleaner and more refined visualisations, as they offer advanced plotting capabilities that complement Python’s outputs
+
+3.6 **Ethical Practice**
+
+In conducting this research, I made use of large language models (LLMs) such as Grok and GitHub Copilot to support coding and writing processes. These tools were primarily employed to refine Python code, detect bugs, and generate R scripts for visualizations, as well as to improve the flow and clarity of academic writing. The efficiency gains were substantial, enabling faster iteration and reducing technical barriers.
+
+However, reliance on LLMs raises critical questions of authorship, originality, and reliability. While these models can accelerate workflows, they are prone to producing errors, “hallucinations,” or overly generic outputs. To mitigate this, I systematically validated all code outputs within my own Python environment, and I cross-checked all text suggestions against academic sources. Where external material was incorporated (e.g., from websites), we referenced it appropriately in line with academic integrity standards.
+
+The use of LLMs also has broader implications for equity and reproducibility. Access to proprietary AI tools may privilege researchers with resources, raising questions about fairness in research practice across low- and middle-income contexts. Moreover, because LLMs are non-transparent in their training data, there is a risk of embedding biases in both methodological and discursive choices. Documenting their use explicitly, as I have done here, enhances transparency and allows readers to critically assess the integrity of the research process.
+
+Overall, while LLMs offered practical support in this project, final responsibility for all coding, analysis, and interpretation rested with me as the researcher. Their role was supplementary, not substitutive, ensuring that academic rigour and originality were maintained.
+
+## **3.6 Limitations and Assumptions**
+
+Several assumptions underpin this approach:
+
+1.  
+
+2.  All POIs are weighted equally, though in practice their attractiveness varies (e.g., hospitals attract more trips than parks). Future work could introduce POI-specific weights.
+
+3.  
+
+4.  Static edge weights assume free-flow travel, omitting congestion effects. Incorporating dynamic traffic data could refine accuracy.
+
+5.  
+
+6.  The model is road-based, excluding multimodal travel (e.g., bus + walking) due to data limitations.
+
+7.  
+
+8.  No calibration against observed OD surveys was possible, reflecting Abuja’s data scarcity.
+
+9.  
+
+Despite these limitations, the approach demonstrates the value of synthetic OD modelling in data-scarce African cities, producing actionable insights that would otherwise be unattainable.

@@ -1,0 +1,101 @@
+---
+title: "Findings and Discussion"
+author: "Idris Baba"
+format: html
+editor: visual
+---
+
+# **4.0 Findings and Discussions**
+
+## **4.1 Critical Findings and Discussion of OD Matrix**
+
+Figures 4.11 and 4.2 present the Origin-Destination (O-D) matrix, illustrating the spatial distribution and intensity of transportation flows across Abuja. The flows are categorized by varying levels of intensity low, medium, high, and very high providing a clear visualization of the city's mobility dynamics. The data indicate a maximum daily trip volume of approximately 400,000, with a significant concentration of trips directed toward the Central Business District (CBD). This area, which encompasses Phase 1 districts such as Maitama, *Wuse, Garki*, and *Asokoro*, emerges as the primary node of activity within the urban landscape. These zones represent not only the administrative and commercial heart of the city but also the epicenter of travel demand. This spatial concentration is of particular importance in the context of decarbonization strategies, as it enables the identification of high-mobility hotspots that contribute disproportionately to transport-related emissions. The analysis highlights the structural underpinnings of Abuja’s unsustainable mobility patterns, including mono-centric urban development, limited mixed land use, and inadequate decentralization of services. Addressing these spatial and infrastructural imbalances is essential for fostering a more sustainable and equitable urban transport system.
+
+Figure 4.3 Patterns of travel demand across Abuja
+
+Analysis of the origin-destination patterns in Figure 4.3 reveals that Abuja’s mobility landscape is dominated by trips for education, healthcare, public services, recreation, and shopping. Notably, a pronounced concentration of flows occurs along the southern axis, particularly towards Nyanya, Maraba, and the Airport Road corridor. While this pattern reflects functional dependency on these nodes, it also exposes deeper structural issues: housing-workplace mismatches, limited transport infrastructure, and unequal spatial distribution of services. For instance, commuting along the Lugbe corridor contributes an estimated 40,000 trips per day, generating average delays of 30–60 minutes (Akinbusola et al., 2025).
+
+This spatial concentration raises critical questions about urban form and socio-economic equity. Centralised nodes, such as retail and elite service clusters, reinforce peak-period, high-volume flows that are not only vulnerable to congestion but also impede low-carbon transitions. From a sustainability perspective, such mobility patterns exemplify the “double burden” of transport injustice and carbon lock-in (Lucas, 2012). Long trips by private vehicles and minibuses disproportionately affect low-income households, who face both affordability constraints and exposure to emissions, while higher-income groups benefit from centralised service access.
+
+However, while the OD data provide valuable insight, it is important to acknowledge limitations. The flows are modelled rather than survey-based, which may underrepresent informal transport modes and off-peak variability, suggesting that actual inequities and congestion pressures could be even more acute. Furthermore, these flows reveal patterns but not the causal drivers of travel behaviour, highlighting a gap in understanding the interplay between land-use policies, employment distribution, and modal choice. Comparative evidence from other rapidly urbanising LMIC capitals, such as Nairobi and Dhaka, shows similar southern or peripheral axis dependencies, reinforcing the structural nature of these mobility challenges.
+
+Policy interventions must therefore be multi-dimensional. Technological measures such as bus rapid transit (BRT) or electrified bus fleets along high-flow corridors can deliver immediate emissions reductions and improve accessibility. Yet, without structural reforms including decentralisation of health, education, and retail services, investment in 15-minute neighbourhood accessibility (Moreno et al., 2021), and management of private-sector trip attractors Abuja risks perpetuating a car-dependent, congestion-prone model of urbanisation incompatible with the Energy Transition Plan (2022). Integrating mobility, equity, and decarbonisation considerations is essential to transition from reactive transport fixes to a strategically sustainable urban system.
+
+## **4.2 Equity and Accessibility within Abuja**
+
+Figure 4.4 reveals accessibility within 40 kilometres distance, The Origin-Destination supported by congestion studies, reveal that Abuja’s spatial structure reinforces socio-economic inequalities. High housing costs in the Central Business District (CBD) and inner-city areas have displaced low- and middle-income residents to peripheral settlements and satellite towns (Daily Trust, 2025; Akinbusola et al., 2025). Consequently, these populations undertake long daily commutes often exceeding 40 km through heavily congested transport corridors, incurring higher transport costs, prolonged exposure to traffic-related air pollution, and reduced economic productivity. Figure 4.4 visualises the uneven distribution of key urban amenities, highlighting that residents in peripheral areas face significantly reduced access to education, healthcare, and employment hubs compared with CBD residents.
+
+This spatial mismatch exemplifies environmental and infrastructural injustice, as the burden of urban inefficiencies disproportionately affects lower-income populations. From a decarbonisation perspective, enforced long-distance commuting directly increases carbon emissions, compounding Abuja’s environmental footprint. While decentralisation of services such as developing local service hubs in satellite towns could mitigate these inequities and reduce travel demand, such interventions face practical constraints related to land markets, infrastructure investment, and governance capacity.
+
+It should also be noted that the OD flows used here are derived from modelled data rather than observed commuter surveys, which may underrepresent informal transit patterns and peripheral mobility. This limitation suggests that actual inequities could be more pronounced than indicated. Moreover, comparative evidence from other rapidly urbanising LMIC capitals, including Nairobi and Dhaka, shows similar patterns of peripheralisation and extended commutes, situating Abuja within broader structural dynamics of urbanisation.
+
+Overall, while centralised planning and high-volume corridors dominate mobility patterns, equitable decarbonisation requires integrated interventions that balance accessibility, spatial justice, and climate goals. Such approaches could reduce systemic carbon emissions while ![Text Box: Figure 4.4 Showing Accessibility and proximity to essential services such as healthcare, education , shopping, recreation and public services: these clearly shows unequal distribution of amenities leaving other population covering long distance of up to 40Km](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif){alt="Text Box: Figure 4.4 Showing Accessibility and proximity to essential services such as healthcare, education , shopping, recreation and public services: these clearly shows unequal distribution of amenities leaving other population covering long distance of up to 40Km"}![](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif)\
+improving quality of life for disadvantaged populations.
+
+## **4.3 Service Coverage in Abuja**
+
+Figure 4.5 Service coverage across Abuja by travel purpose
+
+***Figure 4.5*** reveals the analysis of service coverage by travel purpose reveals spatial imbalance in accessibility across Abuja’s wards. High levels of coverage are concentrated in central areas, where essential services such as schools, hospitals, government offices, shopping centres, and recreational facilities are clustered, raising question of equity and inequality. This centralisation aligns with findings from other African cities, where core zones host most formal services while peripheral settlements remain underserved (Parnell and Pieterse, 2014; Salon and Gulyani, 2019).
+
+In contrast, peripheral wards exhibit low coverage across all travel purposes, reflecting the city’s rapid spatial expansion relative to infrastructure and service provision. This is particularly critical for education and healthcare, where accessibility gaps may exacerbate social inequality and worsen outcomes for already vulnerable populations (Lucas et al., 2016). The coverage deficit in peripheral areas underscores the transport-poverty nexus: households on the urban edge often face longer travel times and higher transport costs to reach essential services, despite having the least disposable income (Pojani and Stead, 2015; Lucas et al., 2016).
+
+The maps also highlight that public services (e.g., government institutions, libraries, post offices) are highly concentrated, reflecting Abuja’s role as the Federal Capital. However, such concentration comes at the cost of equitable accessibility for residents in outer wards, reinforcing spatial exclusion (Cervero and Kockelman, 1997). Similarly, recreational and shopping opportunities are disproportionately located in central areas, limiting access to cultural and commercial amenities for peri-urban populations.
+
+Methodologically, the use of flow-based buffers provides a proxy for service accessibility, capturing populations within reach of facilities. However, this assumes uniform access within the buffer and does not account for transport mode, affordability, or congestion (Fotheringham and O’Kelly, 1989; de Vries, Nijkamp and Rietveld, 2009). Nevertheless, integrating population estimates ensures that accessibility analysis reflects not only service locations but also the scale of demand.
+
+From a planning perspective, the results suggest the need to decentralise essential services or strengthen transport connectivity for underserved wards. Establishing multi-purpose hubs in peripheral areas could reduce travel burdens, while expanding public transport networks would increase effective accessibility to central facilities (Sovacool et al., 2019; Creutzig et al., 2019). These interventions would support Abuja’s broader goals of sustainable urban mobility and equitable service provision in line with global decarbonisation agendas (United Nations, 2015; Thomas et al., 2024).
+
+## **4.4 Decarbonisation and the Energy Transition**
+
+Nigeria’s Energy Transition Plan (ETP) places the transport sector responsible for over 70% of energy emissions in 2020 at the centre of decarbonisation (ETP, 2022). The OD results identify precisely where interventions could be most impactful: high-volume radial flows. Shifting these from private cars and minibuses to electric buses, formalised mass transit, and eventually an expanded rail system offers substantial emissions reduction potential.
+
+The ETP anticipates biofuel blending as a short-term measure and full electrification of buses by 2055, alongside significant adoption of two- and three-wheeled EVs in urban areas (ETP, 2022). Abuja is already hosting EV pilots such as charging stations by NNPC New Energies and battery swapping infrastructure by Spiro and Qoray. However, without coordinated investment in high-demand corridors, these innovations risk remaining niche rather than systemic solutions. The challenge is therefore not just technological but spatial: aligning decarbonisation strategies with actual demand patterns. OD modelling can guide where e-bus corridors, EV charging, and eventually hydrogen trucking routes should be prioritised.
+
+## **4.5 Corridors for targeted interventions**
+
+ Figure 4.6 highlights the weighted betweenness centrality routes that form the backbone of Abuja’s mobility system, concentrating the highest through-flows. In transport network theory, these corridors represent both opportunities and systemic vulnerabilities: they are leverage points for interventions, yet sites where congestion, emissions lock-in, and inequities can be amplified (Cervero & Kockelman, 1997). For Abuja, prioritising decarbonisation policies such as Bus Rapid Transit lanes, electrified bus fleets, and congestion pricing along these high-betweenness arteries could deliver disproportionate system-wide carbon reductions, aligning with Nigeria’s Energy Transition Plan (2022) goals on modal shift and electrification.
+
+However, focusing solely on betweenness centrality carries risks. High-centrality routes often correspond to already privileged corridors, potentially neglecting peripheral or informal transit networks critical for equitable access (Salon & Gulyani, 2019). Comparative studies in other LMIC capitals, such as Nairobi and Dhaka, demonstrate that interventions targeting only central corridors may exacerbate socio-spatial disparities (Currie et al., 2020). Therefore, centrality-based diagnostics should be complemented by accessibility and equity metrics, and scenario analyses that consider peripheral flows, informal transport, and temporal variability.
+
+## **4.5 Research Reflections and limitations**
+
+While useful for visualising general demand trends, gravity models rest on assumptions that limit their precision. They assume uniform trip generation, privilege population size over socio-economic factors, and do not capture temporal variability (e.g., peak vs off-peak congestion). This can overstate flows in some areas while underestimating others.
+
+Future work should therefore integrate OD modelling with:
+
+-   
+
+-   Mobile phone or GPS data to capture real trip dynamics.
+
+-   
+
+-   Household travel surveys to include socio-economic dimensions.
+
+-   
+
+-   Agent-based simulations to test decarbonisation scenarios (e.g., electric bus rollout, full rail network activation).
+
+-   
+
+Such methodological hybridity would produce more robust, evidence-based transport planning tools for Abuja and comparable African cities.
+
+### 4.5.1 15-minute city analysis
+
+A future line of research and policy development could focus on testing the feasibility of implementing the 15-minute city concept in Abuja. By analyzing the extent to which residents can realistically access key services within a 15-minute travel buffer, planners would gain valuable insights to guide future recommendations and inform more equitable urban development strategies.
+
+Figure 4.5 1n 15-minute city map for the city of Abuja showing visualisation of access within 15 minutes walking distance
+
+**5.2 Recommendation**
+
+This dissertation has provided key insights into commuting flows and accessibility in Abuja, but several areas warrant deeper exploration.
+
+First, the OD modelling framework should be enhanced through stronger data integration and calibration. Incorporating household travel surveys, GPS traces, and mobile phone call detail records (CDRs) would improve robustness, capture peak versus off-peak variations, and better represent the role of informal transport.
+
+Second, future research should move beyond road-based analysis to embrace multimodal systems. Joint modelling of Abuja’s incomplete light rail, emerging BRT corridors, and paratransit networks would enable scenario testing for electrified bus deployment, congestion charging, and non-motorised transport investments within Nigeria’s Energy Transition Plan.
+
+Third, equity-sensitive and participatory approaches should be embedded. Linking spatial modelling with community engagement would reveal how women, low-income households, and informal workers encounter accessibility barriers, ensuring that decarbonisation strategies promote social justice as well as emissions reduction.
+
+Finally, dynamic scenario modelling should be applied to explore long-term pathways. Tools such as agent-based simulations and integrated land use–transport models could quantify the impacts of policies including decentralised 15-minute neighborhoods, full bus electrification, and alternative service distribution strategies.
+
+Pursuing these directions would reinforce the empirical and policy foundations established here, offering more comprehensive, inclusive, and resilient pathways toward sustainable mobility in Abuja and comparable African cities.

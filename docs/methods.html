@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Idris Baba">
+
+<title>Methodology – Decarbonisation of Transportation in LMICs: Abuja</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Decarbonisation of Transportation in LMICs: Abuja</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./introduction.html"> 
+<span class="menu-text">Introduction</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./literature.html"> 
+<span class="menu-text">Literature</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./methods.html" aria-current="page"> 
+<span class="menu-text">Methods</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./results.html"> 
+<span class="menu-text">Results</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./OD_workflow.html"> 
+<span class="menu-text">R Workflow</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./conclusion.html"> 
+<span class="menu-text">Conclusion</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./references.html"> 
+<span class="menu-text">References</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link active" data-scroll-target="#methodology"><strong>3.0 Methodology</strong></a>
+  <ul class="collapse">
+  <li><a href="#overview-of-methodological-approach" id="toc-overview-of-methodological-approach" class="nav-link" data-scroll-target="#overview-of-methodological-approach"><strong>3.1 Overview of Methodological Approach</strong></a></li>
+  <li><a href="#a-map-of-a-bird" id="toc-a-map-of-a-bird" class="nav-link" data-scroll-target="#a-map-of-a-bird">![A map of a bird</a></li>
+  <li><a href="#data-sources-and-preprocessing" id="toc-data-sources-and-preprocessing" class="nav-link" data-scroll-target="#data-sources-and-preprocessing">3.<strong>3 Data Sources and Preprocessing</strong></a>
+  <ul class="collapse">
+  <li><a href="#data-sources-used-in-our-study" id="toc-data-sources-used-in-our-study" class="nav-link" data-scroll-target="#data-sources-used-in-our-study"><strong>3.3.1 Data Sources used in our study</strong></a></li>
+  <li><a href="#gridded-population-data-sourced-from-worldpop" id="toc-gridded-population-data-sourced-from-worldpop" class="nav-link" data-scroll-target="#gridded-population-data-sourced-from-worldpop"><strong>3.3.2 Gridded Population Data Sourced from ( WorldPop)</strong></a></li>
+  <li><a href="#points-of-interest-pois." id="toc-points-of-interest-pois." class="nav-link" data-scroll-target="#points-of-interest-pois."><strong>3.2. Points of Interest (POIs).</strong></a></li>
+  <li><a href="#road-network-data" id="toc-road-network-data" class="nav-link" data-scroll-target="#road-network-data"><strong>3.3 Road Network Data</strong></a></li>
+  </ul></li>
+  <li><a href="#origin-destination-modelling-framework" id="toc-origin-destination-modelling-framework" class="nav-link" data-scroll-target="#origin-destination-modelling-framework"><strong>3.4 Origin-Destination Modelling Framework</strong></a></li>
+  <li><a href="#origin-destination-pair-generation" id="toc-origin-destination-pair-generation" class="nav-link" data-scroll-target="#origin-destination-pair-generation"><strong>3.4 Origin-Destination Pair Generation</strong></a></li>
+  <li><a href="#computational-workflow-in-google-collab-python-environment" id="toc-computational-workflow-in-google-collab-python-environment" class="nav-link" data-scroll-target="#computational-workflow-in-google-collab-python-environment"><strong>3.5. Computational workflow in google collab Python environment</strong></a></li>
+  <li><a href="#limitations-and-assumptions" id="toc-limitations-and-assumptions" class="nav-link" data-scroll-target="#limitations-and-assumptions"><strong>3.6 Limitations and Assumptions</strong></a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Methodology</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Idris Baba </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="methodology" class="level1">
+<h1><strong>3.0 Methodology</strong></h1>
+<section id="overview-of-methodological-approach" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-methodological-approach"><strong>3.1 Overview of Methodological Approach</strong></h2>
+<p>Figure 3.1 shows the processes involved in model building</p>
+<p>Figure 3.1 shows a clear workflow of all the processing essential to get the required dataset for building our origin destination model.</p>
+<p>Understanding mobility patterns is critical for designing sustainable, low-carbon transport systems. In Abuja, rapid urbanisation has intensified travel demand, yet data on commuting flows, trip purposes, and accessibility gaps remain very limited. This absence of detailed empirical data limits evidence-based planning and hinders the identification of priority corridors for decarbonisation.</p>
+<p>To address this challenge, this study adopts an Origin-Destination (OD) modelling framework to estimate flows between administrative wards and key Points of Interest (POIs). By capturing potential trip interactions, the OD model highlights high-demand corridors, underserved areas, and accessibility gaps. These insights provide evidence for interventions such as public transport upgrades, cycling infrastructure, and pedestrian facilities.</p>
+<p>The methodological choice is guided by two considerations. First, the gravity model is a long-established tool for modelling spatial interaction under conditions of limited data because it is simple to use and transferable (Fotheringham and O’Kelly, 1989; Batty, 1976). Unlike data-intensive transport demand models, the gravity framework requires only population, distance, and basic land-use proxies, making it particularly suited for Abuja where census and survey data are scarce. Batty (2016) further describes such models as “laboratory substitutes,” enabling planners to test future urban scenarios when real-world experiments or large-scale trials are not feasible.</p>
+<p>Secondly, the study draws from network science, framing Abuja’s transport infrastructure as a complex system. Empirical research shows that urban mobility networks often exhibit small-world properties (Watts and Strogatz, 1998) and scale-free hierarchies (Barabási and Albert, 1999). This justifies the use of OSMnx and netwrokx Python library to model connectivity, accessibility, and routing dynamics using OpenStreetMap open data. These approaches allow meaningful analysis even in the absence of traffic counts, providing insights into how urban form and network topology structure accessibility.</p>
+<p>The final workflow integrates WorldPop gridded population estimates, OSM-derived POIs, and GRID3 ward boundaries into a gravity-based OD model, implemented in Python (OSMnx, NetworkX, GeoPandas). This design is therefore both theoretically grounded and practically suited to data-scarce LMIC contexts like Abuja.</p>
+</section>
+<section id="a-map-of-a-bird" class="level2">
+<h2 class="anchored" data-anchor-id="a-map-of-a-bird">![A map of a bird</h2>
+<p>AI-generated content may be incorrect.](file:///C:/Users/Idris/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif){alt=“A map of a bird</p>
+<p>AI-generated content may be incorrect.”} 3.2 Study Area</p>
+<p>Abuja, as shown in (figure 3.2 2 ) the Federal Capital Territory (FCT) of Nigeria, is experiencing rapid urbanisation and population growth. Between 2010 and 2019, the city’s built-up area expanded by 30.93%, and as of 2023, its population growth rate was estimated at 5% (Bashir et al., 2021). These dynamics have produced challenges including congestion, strain on public transportation, and rising emissions; understanding transportation demand is therefore very important for sustainable planning. By modelling mobility patterns, the study provides insights to guide policy interventions and infrastructure investment.</p>
+</section>
+<section id="data-sources-and-preprocessing" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources-and-preprocessing">3.<strong>3 Data Sources and Preprocessing</strong></h2>
+<section id="data-sources-used-in-our-study" class="level3">
+<h3 class="anchored" data-anchor-id="data-sources-used-in-our-study"><strong>3.3.1 Data Sources used in our study</strong></h3>
+<p>Table 3.2</p>
+<p>Table 3.2 &nbsp;&nbsp;Table 3.2 shows the datasets used in our model.: these gives a detail of preliminary data collection that was used such as population, POI’s, wards and road network &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<p>
+Datasets
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Source / Format
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Key Preprocessing Steps
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Output / Usage
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Dependency
+</p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<p>
+</p><ol type="1">
+<li>Population (Raster)
+<p></p>
+</li></ol></td>
+<td>
+</td>
+<td>
+<p>
+(WorldPop, 2025)
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Raster zonal statistics, aggregated to ward boundaries
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Ward-level population totals
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Depends on Wards (for boundaries)
+</p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<p>
+</p><ol start="2" type="1">
+<li>POIs (Points/Polygons)
+<p></p>
+</li></ol></td>
+<td>
+</td>
+<td>
+<p>
+OpenStreetMap (OSM, 2025)
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Filter relevant categories (schools, markets, etc.), convert polygons to centroids, snap to nearest road nodes
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+POI nodes connected to road network
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Depends on Roads (for snapping)
+</p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<p>
+</p><ol start="3" type="1">
+<li>Roads (Vector / Shapefile)
+<p></p>
+</li></ol></td>
+<td>
+</td>
+<td>
+<p>
+OpenStreetMap (OSM, 2025)
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Clean with GeoPandas, simplify geometries, align CRS, convert to graph using NetworkX
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Road network graph with nodes/edges
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Independent dataset (central input)
+</p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<p>
+</p><ol start="4" type="1">
+<li>Wards (Vector / Shapefile)
+<p></p>
+</li></ol></td>
+<td>
+</td>
+<td>
+<p>
+Administrative boundaries
+</p>
+<p>
+(Grid 3, 2025)
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Calculate ward centroids, snap to nearest road nodes
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Ward centroids aligned with road network
+</p>
+</td>
+<td>
+</td>
+<td>
+<p>
+Depends on Roads (for snapping)
+</p>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</section>
+<section id="gridded-population-data-sourced-from-worldpop" class="level3">
+<h3 class="anchored" data-anchor-id="gridded-population-data-sourced-from-worldpop"><strong>3.3.2 Gridded Population Data Sourced from ( WorldPop)</strong></h3>
+<p>Nigeria lacks recent census data, necessitating the use of WorldPop gridded estimates. These are generated through bottom-up population models (see Figure 3.1) that integrate census microdata, remotely sensed imagery, and settlement data. Using dasymetric weighting and Random Forest algorithms, aggregated counts are redistributed to ~100 m grid cells, producing finer spatial detail than official aggregates (Nieves and Fleischmann, 2022; Stevens et al., 2015).</p>
+<p><em>As shown in Figure 3.2</em>, the gridded population estimates combine census surveys, settlement morphology, and geospatial covariates such as elevation, accessibility, vegetation to generate spatially disaggregated estimates. This enables detailed population surfaces to serve as inputs for trip generation analysis in contexts where household travel surveys or OD datasets are unavailable.</p>
+<p>Although widely used, these estimates have limitations. In areas with limited training data, such as informal settlements or remote villages, populations may be systematically underrepresented (Leyk et al., 2019). Nevertheless, their consistency, open availability, and fine resolution make them highly valuable in data-scarce environments such as Abuja, where they provide essential baseline data for transport modelling and planning.</p>
+<p>Figure 3.2 : Workflow for generating gridded population estimates. Source: GRID3.</p>
+</section>
+<section id="points-of-interest-pois." class="level3">
+<h3 class="anchored" data-anchor-id="points-of-interest-pois."><strong>3.2. Points of Interest (POIs).</strong></h3>
+<p>In Abuja, where observed trip data are unavailable, Points of Interest (POIs) serve as proxies for trip attractors. POIs represent destinations such as schools, hospitals, markets, and government offices that draw daily mobility flows; their density and categorisation enable the estimation of “attractiveness” in OD models, allowing integration of fine-grained behavioural patterns into transport analysis (Notelaers et al., 2024).</p>
+<p>Beyond modelling, POI data can highlight where pedestrian and cycling infrastructure is most needed, especially in clusters of social services or markets (Li et al., 2021). In this study, 302 POIs were extracted from OSM, processed with GeoPandas, and aligned with the road network graph to act as trip destinations.</p>
+</section>
+<section id="road-network-data" class="level3">
+<h3 class="anchored" data-anchor-id="road-network-data"><strong>3.3 Road Network Data</strong></h3>
+<p>The road network for Abuja was sourced from OpenStreetMap and processed using OSMnx 2.0.6 (Boeing, 2025). The raw dataset included 62,774 nodes and 156,507 edges, representing the city’s full street infrastructure. To ensure spatial accuracy and analytical efficiency, the network was cleaned using GeoPandas to remove invalid geometries, simplified to reduce topological complexity, and clipped to align precisely with the study boundary.</p>
+<p>The cleaned network was then converted into a NetworkX graph, enabling advanced connectivity analysis and shortest-path computations. This graph served as the spatial backbone of the origin destination (OD) model, allowing flow scores and accessibility metrics to be assigned along realistic travel corridors rather than abstract Euclidean paths.</p>
+<p>Due to the large size of the dataset, processing was optimized using Python’s parallelisation libraries, which significantly reduced computation time and allowed for scalable analysis across multiple wards and POIs. The resulting network provided a robust foundation for modeling commuting flows, evaluating transport accessibility, and identifying high-demand corridors within Abuja.</p>
+</section>
+</section>
+<section id="origin-destination-modelling-framework" class="level2">
+<h2 class="anchored" data-anchor-id="origin-destination-modelling-framework"><strong>3.4 Origin-Destination Modelling Framework</strong></h2>
+<p>OD modelling provides a structured way to represent flows between geographic origins and destinations. An OD matrix captures the number of trips between locations, providing insights into demand, accessibility, and potential intervention points (Lovelace and Ellison, 2018). This is particularly important in Abuja, where the absence of OD datasets and the high cost of travel surveys limit conventional planning methodologies.</p>
+<p>This study applies a gravity model (as shown in figure 3.2) , which assumes interaction between locations increases with population at the origin and decreases with distance to the destination. Gravity models are widely used in urban mobility analysis because they balance parsimony with explanatory power, requiring only population and distance inputs yet producing realistic patterns of spatial interaction (Fotheringham and O’Kelly, 1989)</p>
+<p>The formulation adopted is:</p>
+<p>Where <em>wₚₒₚ</em> is the population of the origin ward, and <em>dist</em> is the shortest-path distance in meters between the ward and the nearest point of interest (POI) on the road network. The exponential term <em>exp(−dist / 10,000)</em> applies a decay factor with a 10 km scale parameter, reducing the likelihood of travel as distance increases.</p>
+<p>The exponential decay function was chosen over alternative power-law formulations because it better reflects short-distance, intra-urban trips, where travel probability drops off rapidly with distance (de Vries, Nijkamp and Rietveld, 2009). A 10 km scale parameter was applied following previous applications in African and Asian cities, where this threshold approximates the typical upper bound for daily commutes (Salon and Gulyani, 2019; Lucas et al., 2016).</p>
+<p>By operationalising this formulation with ward-level population (for trip generation) and POIs (for trip attraction), the model leverages available open datasets to approximate real mobility dynamics in the absence of survey-based OD matrices.</p>
+<p>This framework therefore not only produces estimated flow scores for each OD pair but also provides a replicable methodology suited to other data-scarce African cities. In Abuja specifically, it enables the identification of high-demand corridors and accessibility gaps, offering actionable evidence for prioritising investments in transit routes, cycling networks, and pedestrian infrastructure.</p>
+<p>Figure 3.3 showing the python formula for flow score generation which give the basis for the modellinhg and visualisation</p>
+</section>
+<section id="origin-destination-pair-generation" class="level2">
+<h2 class="anchored" data-anchor-id="origin-destination-pair-generation"><strong>3.4 Origin-Destination Pair Generation</strong></h2>
+<ol type="1">
+<li></li>
+<li><p>Origins: Wards were defined using GRID3 boundary shapefiles. Populations were aggregated from WorldPop raster estimates using <em>zonal statistics</em>, with missing values imputed using ward averages. Centroids were computed and snapped to the nearest road network node.</p></li>
+<li></li>
+<li><p>Destinations: POIs filtered from OSM were converted into centroids and snapped to network nodes.</p></li>
+<li></li>
+<li><p>Pairing: Each of Abuja’s 78 wards was paired with 302 POIs, generating 23,556 possible OD pairs. Distances were calculated using Dijkstra’s algorithm in NetworkX, yielding a distance matrix.</p></li>
+<li></li>
+<li><p>Filtering: Pairs beyond 150 km or with negligible flows were excluded, leaving 6,953 significant OD pairs for analysis.</p></li>
+<li></li>
+<li><p>Outputs: Flow scores and geospatial LineStrings were stored in CSV and GeoPackage formats, forming the OD matrix and mapped visualisations.</p></li>
+<li></li>
+</ol>
+</section>
+<section id="computational-workflow-in-google-collab-python-environment" class="level2">
+<h2 class="anchored" data-anchor-id="computational-workflow-in-google-collab-python-environment"><strong>3.5. Computational workflow in google collab Python environment</strong></h2>
+<p>The analysis was carried out in Google Colab because it provides a flexible, cloud-based Python environment that supports collaboration and easy access to computational resources. Key Python packages were chosen for their specialized strengths: Pandas and GeoPandas for efficient data manipulation, OSMnx and NetworkX for handling complex spatial networks, and Rasterio with Rasterstats for processing raster data. Folium was used to generate interactive maps that allowed results to be explored intuitively. CSV matrices and processed GeoPackages were produced to ensure the outputs were both reusable and compatible with common GIS tools. Finally, R and RStudio were used to create cleaner and more refined visualisations, as they offer advanced plotting capabilities that complement Python’s outputs</p>
+<p>3.6 <strong>Ethical Practice</strong></p>
+<p>In conducting this research, I made use of large language models (LLMs) such as Grok and GitHub Copilot to support coding and writing processes. These tools were primarily employed to refine Python code, detect bugs, and generate R scripts for visualizations, as well as to improve the flow and clarity of academic writing. The efficiency gains were substantial, enabling faster iteration and reducing technical barriers.</p>
+<p>However, reliance on LLMs raises critical questions of authorship, originality, and reliability. While these models can accelerate workflows, they are prone to producing errors, “hallucinations,” or overly generic outputs. To mitigate this, I systematically validated all code outputs within my own Python environment, and I cross-checked all text suggestions against academic sources. Where external material was incorporated (e.g., from websites), we referenced it appropriately in line with academic integrity standards.</p>
+<p>The use of LLMs also has broader implications for equity and reproducibility. Access to proprietary AI tools may privilege researchers with resources, raising questions about fairness in research practice across low- and middle-income contexts. Moreover, because LLMs are non-transparent in their training data, there is a risk of embedding biases in both methodological and discursive choices. Documenting their use explicitly, as I have done here, enhances transparency and allows readers to critically assess the integrity of the research process.</p>
+<p>Overall, while LLMs offered practical support in this project, final responsibility for all coding, analysis, and interpretation rested with me as the researcher. Their role was supplementary, not substitutive, ensuring that academic rigour and originality were maintained.</p>
+</section>
+<section id="limitations-and-assumptions" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-and-assumptions"><strong>3.6 Limitations and Assumptions</strong></h2>
+<p>Several assumptions underpin this approach:</p>
+<ol type="1">
+<li></li>
+<li><p>All POIs are weighted equally, though in practice their attractiveness varies (e.g., hospitals attract more trips than parks). Future work could introduce POI-specific weights.</p></li>
+<li></li>
+<li><p>Static edge weights assume free-flow travel, omitting congestion effects. Incorporating dynamic traffic data could refine accuracy.</p></li>
+<li></li>
+<li><p>The model is road-based, excluding multimodal travel (e.g., bus + walking) due to data limitations.</p></li>
+<li></li>
+<li><p>No calibration against observed OD surveys was possible, reflecting Abuja’s data scarcity.</p></li>
+<li></li>
+</ol>
+<p>Despite these limitations, the approach demonstrates the value of synthetic OD modelling in data-scarce African cities, producing actionable insights that would otherwise be unattainable.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2025 Idris | Built with Quarto &amp; RStudio</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

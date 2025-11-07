@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Idris Baba">
+
+<title>Literature Review – Decarbonisation of Transportation in LMICs: Abuja</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Decarbonisation of Transportation in LMICs: Abuja</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./introduction.html"> 
+<span class="menu-text">Introduction</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./literature.html" aria-current="page"> 
+<span class="menu-text">Literature</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./methods.html"> 
+<span class="menu-text">Methods</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./results.html"> 
+<span class="menu-text">Results</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./OD_workflow.html"> 
+<span class="menu-text">R Workflow</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./conclusion.html"> 
+<span class="menu-text">Conclusion</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./references.html"> 
+<span class="menu-text">References</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#literature-review" id="toc-literature-review" class="nav-link active" data-scroll-target="#literature-review"><strong>2.0 Literature Review</strong></a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><strong>2.1 Introduction</strong></a></li>
+  <li><a href="#global-trends-in-transport-decarbonisation" id="toc-global-trends-in-transport-decarbonisation" class="nav-link" data-scroll-target="#global-trends-in-transport-decarbonisation"><strong>2.2 Global Trends in Transport Decarbonisation</strong></a>
+  <ul class="collapse">
+  <li><a href="#the-global-policy-landscape" id="toc-the-global-policy-landscape" class="nav-link" data-scroll-target="#the-global-policy-landscape"><strong>2.2.1 The global policy landscape</strong></a></li>
+  <li><a href="#research-and-methodological-approaches" id="toc-research-and-methodological-approaches" class="nav-link" data-scroll-target="#research-and-methodological-approaches"><strong>2.2.2 Research and methodological approaches</strong></a></li>
+  <li><a href="#lessons-and-debates" id="toc-lessons-and-debates" class="nav-link" data-scroll-target="#lessons-and-debates"><strong>2.2.3 Lessons and debates</strong></a></li>
+  </ul></li>
+  <li><a href="#transport-decarbonisation-in-low--and-middle-income-countries-lmics" id="toc-transport-decarbonisation-in-low--and-middle-income-countries-lmics" class="nav-link" data-scroll-target="#transport-decarbonisation-in-low--and-middle-income-countries-lmics"><strong>2.3 Transport Decarbonisation in Low- and Middle-Income Countries (LMICs)</strong></a>
+  <ul class="collapse">
+  <li><a href="#distinct-challenges-in-lmic-contexts" id="toc-distinct-challenges-in-lmic-contexts" class="nav-link" data-scroll-target="#distinct-challenges-in-lmic-contexts"><strong>2.3.1 Distinct challenges in LMIC contexts</strong></a></li>
+  <li><a href="#evidence-from-africa-and-nigeria" id="toc-evidence-from-africa-and-nigeria" class="nav-link" data-scroll-target="#evidence-from-africa-and-nigeria"><strong>2.3.2 Evidence from Africa and Nigeria</strong></a></li>
+  <li><a href="#methodological-approaches" id="toc-methodological-approaches" class="nav-link" data-scroll-target="#methodological-approaches"><strong>2.3.3 Methodological approaches</strong></a></li>
+  <li><a href="#emerging-debates" id="toc-emerging-debates" class="nav-link" data-scroll-target="#emerging-debates"><strong>2.3.4 Emerging debates</strong></a></li>
+  </ul></li>
+  <li><a href="#modal-shift-as-a-decarbonisation-pathway" id="toc-modal-shift-as-a-decarbonisation-pathway" class="nav-link" data-scroll-target="#modal-shift-as-a-decarbonisation-pathway"><strong>2.4. Modal Shift as a Decarbonisation Pathway</strong></a>
+  <ul class="collapse">
+  <li><a href="#rationale-and-global-experiences" id="toc-rationale-and-global-experiences" class="nav-link" data-scroll-target="#rationale-and-global-experiences"><strong>2.4.1 Rationale and global experiences</strong></a></li>
+  <li><a href="#public-transport-and-rail" id="toc-public-transport-and-rail" class="nav-link" data-scroll-target="#public-transport-and-rail"><strong>2.4.2 Public transport and rail</strong></a></li>
+  <li><a href="#active-transport-and-land-use-planning" id="toc-active-transport-and-land-use-planning" class="nav-link" data-scroll-target="#active-transport-and-land-use-planning"><strong>2.4.3 Active transport and land-use planning</strong></a></li>
+  <li><a href="#freight-and-logistics" id="toc-freight-and-logistics" class="nav-link" data-scroll-target="#freight-and-logistics"><strong>2.4.4 Freight and logistics</strong></a></li>
+  <li><a href="#methodologies-origin-destination-and-network-analysis" id="toc-methodologies-origin-destination-and-network-analysis" class="nav-link" data-scroll-target="#methodologies-origin-destination-and-network-analysis"><strong>2.4.5 Methodologies: Origin-Destination and network analysis</strong></a></li>
+  </ul></li>
+  <li><a href="#knowledge-gaps-for-abuja-and-emerging-directions" id="toc-knowledge-gaps-for-abuja-and-emerging-directions" class="nav-link" data-scroll-target="#knowledge-gaps-for-abuja-and-emerging-directions"><strong>2.5 Knowledge Gaps for Abuja and Emerging Directions</strong></a>
+  <ul class="collapse">
+  <li><a href="#historical-and-institutional-context" id="toc-historical-and-institutional-context" class="nav-link" data-scroll-target="#historical-and-institutional-context"><strong>2.5.1 Historical and institutional context</strong></a></li>
+  <li><a href="#data-scarcity-and-methodological-challenges" id="toc-data-scarcity-and-methodological-challenges" class="nav-link" data-scroll-target="#data-scarcity-and-methodological-challenges"><strong>2.5.2 Data scarcity and methodological challenges</strong></a></li>
+  <li><a href="#policy-initiatives-and-their-limitations" id="toc-policy-initiatives-and-their-limitations" class="nav-link" data-scroll-target="#policy-initiatives-and-their-limitations"><strong>2.5.3 Policy initiatives and their limitations</strong></a></li>
+  <li><a href="#equity-and-governance-considerations" id="toc-equity-and-governance-considerations" class="nav-link" data-scroll-target="#equity-and-governance-considerations"><strong>2.5.4 Equity and governance considerations</strong></a></li>
+  <li><a href="#emerging-directions" id="toc-emerging-directions" class="nav-link" data-scroll-target="#emerging-directions"><strong>2.5.5 Emerging directions</strong></a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">2.6. Conclusion</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Literature Review</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Idris Baba </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="literature-review" class="level1">
+<h1><strong>2.0 Literature Review</strong></h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction"><strong>2.1 Introduction</strong></h2>
+<p>Transport is rapidly emerging as a major contributor to global greenhouse gas emissions, responsible for nearly one-quarter of energy-related CO₂ output (Rapson and Muehlegger, 2023). These are driven by continuous urban growth and increasing need for transportation, especially across developing regions, emissions are expected to drastically rise in the absence of substantial policy shifts (International Transport Forum, 2021). As urban areas expand and transport demand increases, decarbonising mobility has become a centre of attention for climate action, sustainable urban development, and integrated planning frameworks (Zhao et al., 2023; United Nations, 2015). Although high-income nations have made strides through vehicle electrification, improved fuel efficiency, and enhanced public transit systems, the decarbonisation pathways for low-and middle-income countries (LMICs) remain less defined and more complex (Rapson and Muehlegger, 2023).</p>
+<p>Among LMICs, Nigeria provides a critical case for understanding the complexities of urban mobility and transport decarbonisation. Nigeria, Africa’s most populous nation and largest economy, exemplifies these challenges. Its cities continue to struggle with rapid growth, inadequate infrastructure, and persistent mobility constraints (World Bank, 2023; United Nations, 2022). Abuja, chosen as the federal capital in the late 1970s to relieve pressure on Lagos, has since expanded rapidly, with residential areas spreading outward from the original planned core (Federal Republic of Nigeria, 1979). Much of this growth has been characterized by informal settlement extending on the city’s edges, alongside a heavy dependence on informal transport modes such as minibuses and motorcycles, which remain central to everyday mobility patterns (Ismail, Adu-Ampong, and Aceska, 2024). Abuja’s growth hasn’t been even, so many homes and jobs are farther apart. This leads to long travel times as stated earlier, which increase pollution and make things harder for many people. The city also lacks good public transport and planning strategies, making it tough to cut transport emissions.</p>
+<p>This literature review critically examines existing research on transport decarbonisation, structured into four themes:</p>
+<p>1.&nbsp;&nbsp;&nbsp;&nbsp; Global trends in transport decarbonisation</p>
+<p>2.&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;LMIC-specific experiences and challenges,</p>
+<p>3.&nbsp;&nbsp;&nbsp;&nbsp; Modal shift as a key pathway, and</p>
+<p>4.&nbsp;&nbsp;&nbsp;&nbsp; knowledge gaps and emerging directions for Abuja.</p>
+<p>Beyond summarising existing scholarship, it evaluates methodologies, compares perspectives, and highlights research gaps that this dissertation seeks to address. The overarching goal is to situate Abuja’s decarbonisation challenge within both global frameworks and local realities, thereby identifying methodological approaches and conceptual insights to guide the case study analysis.</p>
+</section>
+<section id="global-trends-in-transport-decarbonisation" class="level2">
+<h2 class="anchored" data-anchor-id="global-trends-in-transport-decarbonisation"><strong>2.2 Global Trends in Transport Decarbonisation</strong></h2>
+<section id="the-global-policy-landscape" class="level3">
+<h3 class="anchored" data-anchor-id="the-global-policy-landscape"><strong>2.2.1 The global policy landscape</strong></h3>
+<p>Transport decarbonisation has emerged as a central concern in climate policy, with the Paris Agreement (2015) and subsequent COP summits reinforcing the urgency of reducing emissions from this sector. In high-income countries, regulatory measures such as the European Union’s strengthened CO₂ performance standards for new vehicles (Regulation 2023/851) and California’s zero-emission vehicle mandate demonstrate strong policy-driven transitions. At the international level, frameworks like the Avoid-Shift-Improve (ASI) model have been adopted by organizations including the World Bank and the International Energy Agency (World Bank, 2023).</p>
+<p>The ASI framework offers a systematic way of classifying interventions: Avoid unnecessary travel through urban planning and telecommuting; Shift towards sustainable modes such as public transport, walking, and cycling; and Improve vehicle and fuel technologies. While electrification dominates policy narratives in the Global North, there is increasing recognition that Avoid and Shift measures deliver more immediate co-benefits, particularly in congested urban areas (Fazekas, Bataille and Vogt-Schilb, 2022). However, there is a strong argument that the overwhelming focus on technological fixes risks sidelining structural and behavioural changes that may be more feasible and impactful in many contexts (Creutzig et al., 2019; Sovacool et al., 2019). The challenge, therefore, lies not only in advancing global policy frameworks but also in assessing how they can be meaningfully adapted to the mobility realities of low- and middle-income countries, where infrastructure, governance, and urban growth dynamics presents different conditions (Pojani and Stead, 2015; Nieuwenhuijsen et al., 2016).</p>
+</section>
+<section id="research-and-methodological-approaches" class="level3">
+<h3 class="anchored" data-anchor-id="research-and-methodological-approaches"><strong>2.2.2 Research and methodological approaches</strong></h3>
+<p>The academic literature on transport decarbonisation globally is quite vast and methodologically diverse. Integrated assessment models (IAMs) have been used to simulate global energy and transport transitions, linking macroeconomic growth, energy systems, and emissions trajectories (Thomas, 2024). However, these models often lack fine-grained urban and behavioural dimensions, limiting their applicability to city-level contexts. Complementary methods such as transport demand models and origin-destination (OD) analyses provide greater resolution at urban scales, capturing daily mobility dynamics (Rong et al., 2024).</p>
+<p>Bibliometric reviews (Wardrop et al., 2021; Transport Decarbonisation Bibliometric Review, 2023) reveal that global research is heavily concentrated in high-income countries, with limited representation of Africa and other LMICs. This skew reflects both data availability and funding biases, raising questions about the transferability of solutions across regions. These modelling and bibliometric approaches are valuable for charting global pathways, but they often fail to capture the lived realities of mobility in rapidly urbanising LMIC contexts. For instance, while electrification is projected to deliver deep decarbonisation in Europe and China, scholars caution against technological determinism in contexts where grid reliability and affordability remain barriers (Agyekum et al., 2023).</p>
+</section>
+<section id="lessons-and-debates" class="level3">
+<h3 class="anchored" data-anchor-id="lessons-and-debates"><strong>2.2.3 Lessons and debates</strong></h3>
+<p>Three key lessons emerge from the global literature. First, technological substitution alone is insufficient: electrification without modal shift risks perpetuating congestion, land-use inefficiency, and inequities (WEF, 2024). Second, systemic change is dependent on multi-level governance, requiring alignment between urban planning, fiscal policy, and industrial strategy (Rapson and Muehlegger, 2023). Third, global decarbonisation scenarios tend to underestimate the political economy of transport, including resistance from automobile lobbies and public opposition to restrictive measures such as fuel taxes or congestion pricing.</p>
+<p>For LMICs, these debates highlight the importance of context-sensitive pathways. Rather than importing solutions from the Global North wholesale, scholars argue for adaptive strategies that integrate informal transport, affordability constraints, and rapid urbanisation dynamics (Visagie et al., 2021). This situates Abuja within the broader global conversation: the challenge extends beyond technology to the institutional and social realms.</p>
+</section>
+</section>
+<section id="transport-decarbonisation-in-low--and-middle-income-countries-lmics" class="level2">
+<h2 class="anchored" data-anchor-id="transport-decarbonisation-in-low--and-middle-income-countries-lmics"><strong>2.3 Transport Decarbonisation in Low- and Middle-Income Countries (LMICs)</strong></h2>
+<section id="distinct-challenges-in-lmic-contexts" class="level3">
+<h3 class="anchored" data-anchor-id="distinct-challenges-in-lmic-contexts"><strong>2.3.1 Distinct challenges in LMIC contexts</strong></h3>
+<p>In contrast to high-income countries, LMICs face structural barriers that complicate transport decarbonisation. Rapid urban growth, weak institutions, and financial constraints limit the capacity to invest in large-scale low-carbon infrastructure (HVT, 2023). Informal transport systems such as the minibuses, motorcycle taxis, and shared tricycles dominate mobility in many African cities. These systems provide affordable and flexible services but are characterized by inefficiency, high emissions, and limited safety measure (Visagie et al., 2021).</p>
+<p>Moreover, vehicle fleets in LMICs are often composed of second-hand imports from high-income countries, which undermines emissions standards and prolongs the dominance of internal combustion engines (Agyekum et al., 2023). Energy system constraints further compound the challenge: unreliable electricity grids and limited charging infrastructure undermine the feasibility of large-scale electric vehicle (EV) adoption (Okereke et al., 2022).</p>
+</section>
+<section id="evidence-from-africa-and-nigeria" class="level3">
+<h3 class="anchored" data-anchor-id="evidence-from-africa-and-nigeria"><strong>2.3.2 Evidence from Africa and Nigeria</strong></h3>
+<p>Within Africa, studies continue to emphasise on the dual role of informal paratransit as both a lifeline and a barrier to decarbonisation. The Africa Urban Mobility Observatory (2021) piloted big-data tools in Lagos, Kigali, and Kinshasa to map informal networks, quantify emissions, and benchmark performance. Their findings highlight the significant contribution of paratransit vehicles to CO₂ and local pollutants, while also noting that reformative efforts must balance inclusivity and environmental goals. In Nigeria, urban transport is shaped by fragmented planning and low public investment. Lagos has pioneered Bus Rapid Transit (BRT), demonstrating potential for modal shift but facing persistent capacity and governance challenges (World Bank, 2020). Studies of Ibadan’s peri-urban households reveal that socioeconomic variables such as income, car ownership, and household size significantly shape travel choices (Oladeji et al., 2022). These insights are especially relevant to Abuja, where rising peri-urbanisation and car dependency intersect with informal settlement growth (Ismail et al., 2024).</p>
+</section>
+<section id="methodological-approaches" class="level3">
+<h3 class="anchored" data-anchor-id="methodological-approaches"><strong>2.3.3 Methodological approaches</strong></h3>
+<p>LMIC research increasingly relies on mixed method approaches to compensate for data scarcity. Household travel surveys remain the gold standard but are costly and rare. Instead, scholars combine participatory mapping of informal routes, gridded population datasets (e.g., WorldPop), and mobile phone call detail records (CDRs) to estimate travel demand (Wardrop et al., 2020; Leyk et al., 2019). Advances in synthetic data generation, such as origin-destination (OD) matrix modelling via machine learning (Rong et al., 2024), offer further opportunities to fill gaps where conventional surveys are absent. The emphasis on informal systems has also led to innovative data collection methods. In Lagos, for instance, intercept surveys and crowdsourced mapping apps were combined to construct General Transit Feed Specification (GTFS) datasets for danfo minibuses, enabling their integration into transport models (Visagie et al., 2021). These methods demonstrate practical tools that could be adapted in Abuja.</p>
+</section>
+<section id="emerging-debates" class="level3">
+<h3 class="anchored" data-anchor-id="emerging-debates"><strong>2.3.4 Emerging debates</strong></h3>
+<p>A key debate within LMIC literature concerns the relative emphasis on technology-led pathways (e.g., electrification, CNG conversion) versus systemic reforms (e.g., land-use planning, mass transit expansion). While EVs attract policy attention, evidence suggests that without concurrent investment in public transport and demand reduction, electrification risks reproducing inequities and congestion (Agyekum et al., 2023). Thus, the consensus in LMIC literature tilts toward integrated strategies that balance near-term incremental gains (such as CNG taxis in Abuja) with longer-term systemic reforms.</p>
+</section>
+</section>
+<section id="modal-shift-as-a-decarbonisation-pathway" class="level2">
+<h2 class="anchored" data-anchor-id="modal-shift-as-a-decarbonisation-pathway"><strong>2.4. Modal Shift as a Decarbonisation Pathway</strong></h2>
+<section id="rationale-and-global-experiences" class="level3">
+<h3 class="anchored" data-anchor-id="rationale-and-global-experiences"><strong>2.4.1 Rationale and global experiences</strong></h3>
+<p>Modal shift, which encourages movement from high-emission modes such as private cars to low-emission alternatives including public transport, walking, cycling, and rail, is widely regarded as a core strategy for transport decarbonisation and forms a central pillar of the Avoid-Shift-Improve (ASI) framework. Evidence suggests that modal shift delivers faster and more equitable emissions reductions than vehicle technology substitution alone (World Bank, 2023; WEF, 2024). European cities have pioneered measures such as congestion charging and integrated ticketing in London (Transport for London, 2020), sustained investment in cycling infrastructure in Copenhagen and Amsterdam (Pucher and Buehler, 2008), and the promotion of the “15-minute city” concept in Paris (Moreno et al., 2021). Asian megacities such as Seoul and Guangzhou have also demonstrated the scalability of Bus Rapid Transit (BRT) and metro systems, showing that sustained modal shift is achievable under strong governance.</p>
+<p>Yet debates continue about the model transferability to low- and middle-income countries (LMICs). Replicating these approaches remains challenging due to weak institutional capacity, funding constraints, and the dominance of informal transport (Pojani and Stead, 2015; Lucas et al., 2016; World Bank, 2020). Scholars further highlight political resistance, fragmented governance, and socio-cultural preferences for private car ownership as barriers that complicate implementation (Javaid et al., 2020; Tazzie, Adugna and Woldetensae, 2025). For Abuja, where rapid urbanisation is coupled with rising car dependency and informal mobility systems, the effectiveness of modal shift strategies will hinge not only on adapting global lessons to local governance and socio-economic realities but also on addressing affordability, behavioural patterns, and deep-rooted institutional constraints.</p>
+</section>
+<section id="public-transport-and-rail" class="level3">
+<h3 class="anchored" data-anchor-id="public-transport-and-rail"><strong>2.4.2 Public transport and rail</strong></h3>
+<p>Bus Rapid Transit (BRT) has been identified as the suitable option for LMIC cities due to its relatively low cost and operational flexibility. Studies in Lagos demonstrate that BRT corridors not only reduce emissions but also improve travel times and affordability (World Bank, 2020). Similar evidence from Dar es Salaam and Johannesburg indicates that BRT can support equitable mobility when properly integrated with wider networks (Salon and Gulyani, 2019). However, scholars caution that the lack of integration with informal systems, poor maintenance, and governance fragmentation often undermine sustainability outcomes (Lucas et al., 2016; Visagie et al., 2021).</p>
+<p>Rail, by contrast, offers high-capacity and long-term decarbonisation potential. Yet its success depends heavily on sustained political commitment, funding, and urban density thresholds (Pojani and Stead, 2015). The Abuja Light Rail launched in 2018 but stalled within a few years illustrates both the promise and pitfalls of rail-based modal shift in African contexts. For Abuja, the lesson is that large-scale rail investments must be embedded within broader institutional reforms and complemented by affordable feeder systems to avoid becoming stranded assets.</p>
+</section>
+<section id="active-transport-and-land-use-planning" class="level3">
+<h3 class="anchored" data-anchor-id="active-transport-and-land-use-planning"><strong>2.4.3 Active transport and land-use planning</strong></h3>
+<p>Urban form strongly influences modal choice, with high-density, mixed-use layouts shown to encourage walking, cycling, and public transport usage (Cervero and Kockelman, 1997). The “15-minute city” model reinforces this, emphasizing proximity to essential services (Allam et al., 2022; Moreno et al., 2021). Though rooted in European frameworks, these principles can be adapted to LMIC contexts if informal settlements and land tenure complexities are thoughtfully addressed (Javaid et al., 2020).</p>
+<p>Nonetheless, critics emphasized that transferring compact city models in rapidly urbanizing African cities risk overlooking urgent issues of housing affordability and legal insecurity (Parnell and Pieterse, 2014). In Abuja, the sprawling peri-urban form and escalating car dependency underscores the necessity of integrating land-use and transport planning. Without intervention, active transport strategies may remain underutilised and exacerbate inequality and carbon lock-in.</p>
+</section>
+<section id="freight-and-logistics" class="level3">
+<h3 class="anchored" data-anchor-id="freight-and-logistics"><strong>2.4.4 Freight and logistics</strong></h3>
+<p>Freight contributes significantly to transport emissions. The Urban Transport Group (2022) emphasises key interventions such as modal shift to rail or water, consolidation centres, and fiscal incentives that can boost efficiency and reduce emissions. In LMICs, data shortages and fragmented infrastructure planning are major obstacles, particularly in rapidly growing cities (World Economic Forum, 2024). Evaluations of clean logistics solutions like the use of electric vehicles in urban consolidation schemes in London demonstrate substantial gains in reducing distance, time, and CO₂ emissions (Nguyen, 2021). In Abuja, where freight growth outpaces policy coordination and remains largely informal, these findings suggest urgent need for integrated, data-driven strategies to manage logistics sustainably.</p>
+</section>
+<section id="methodologies-origin-destination-and-network-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="methodologies-origin-destination-and-network-analysis"><strong>2.4.5 Methodologies: Origin-Destination and network analysis</strong></h3>
+<p>Modal shift studies have traditionally relied on origin-destination (OD) matrices to model travel demand. In LMIC contexts, these are increasingly constructed using mobile phone data, GPS traces, and synthetic modelling to compensate for the scarcity of conventional household surveys (Rong et al., 2024). While these datasets offer large-scale coverage, scholars caution that they may under-represent vulnerable populations without reliable mobile access, making validation against household surveys and traffic counts essential for accuracy (Mayorov and Saprykin, 2021).</p>
+<p>Complementary methods such as network analysis using OSMnx (Boeing, 2025) measure connectivity, accessibility, and centrality of street networks, helping to identify priority areas where non-motorised transport (NMT) investments can maximise accessibility. Yet critics argue that these models often struggle to capture the fluid, demand-responsive character of informal transport systems that dominate many African cities (Lucas et al., 2016).</p>
+<p>Taken together, OD modelling and network analysis provide powerful but partial methodological tools for Abuja. They enable richer understanding of travel flows and modal shift potential despite data constraints, but their effectiveness will depend on how well they are adapted to informal mobility dynamics and socio-economic diversity in rapidly urbanising LMIC contexts.</p>
+</section>
+</section>
+<section id="knowledge-gaps-for-abuja-and-emerging-directions" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-gaps-for-abuja-and-emerging-directions"><strong>2.5 Knowledge Gaps for Abuja and Emerging Directions</strong></h2>
+<section id="historical-and-institutional-context" class="level3">
+<h3 class="anchored" data-anchor-id="historical-and-institutional-context"><strong>2.5.1 Historical and institutional context</strong></h3>
+<p>Abuja was conceived as a planned capital, yet implementation has deviated significantly from the Abuja Master Plan (1979). Critical junctures in governance, including the Land Use Act (1978), shaped settlement patterns and reinforced socio-spatial inequalities (Ismail et al., 2024). Informal settlements have proliferated, undermining attempts at integrated urban planning. These dynamics directly affect transport: low-income residents are displaced to peri-urban fringes, resulting in long commutes reliant on informal paratransit.</p>
+</section>
+<section id="data-scarcity-and-methodological-challenges" class="level3">
+<h3 class="anchored" data-anchor-id="data-scarcity-and-methodological-challenges"><strong>2.5.2 Data scarcity and methodological challenges</strong></h3>
+<p>Unlike Lagos, Abuja lacks comprehensive transport surveys or OD datasets. Population data are inconsistent due to delayed census exercises, requiring reliance on modelled datasets (Wardrop et al., 2020). Without robust demand data, planning for decarbonisation is hindered. This creates both a challenge and a methodological opportunity: leveraging hybrid approaches that combine participatory mapping, mobile phone data, and synthetic OD models.</p>
+</section>
+<section id="policy-initiatives-and-their-limitations" class="level3">
+<h3 class="anchored" data-anchor-id="policy-initiatives-and-their-limitations"><strong>2.5.3 Policy initiatives and their limitations</strong></h3>
+<p>Nigeria’s Energy Transition Plan (ETP) commits to carbon neutrality by 2060, with targets for electrification and biofuel blending in the transport sector. Abuja has seen pilot projects such as CNG taxi conversions and the commissioning of a light rail line. Yet, these initiatives have suffered from weak follow-through, financing gaps, and limited integration with informal systems (World Bank, 2020). The BRT pilot in Abuja remains in its preliminary stage, lacking the scale to effect systemic modal shift.</p>
+</section>
+<section id="equity-and-governance-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="equity-and-governance-considerations"><strong>2.5.4 Equity and governance considerations</strong></h3>
+<p>A recurring theme in Abuja is equity. Transport policies often marginalize vulnerable groups women, low-income households, informal workers who depend heavily on informal transport. Without explicit equity integration, decarbonisation risks reinforcing exclusion. Approaches such as planning for equitable decarbonisation (Thomas, 2024) and participatory foresight methods (e.g., e-backcasting) offer promising ways to align climate goals with social justice.</p>
+</section>
+<section id="emerging-directions" class="level3">
+<h3 class="anchored" data-anchor-id="emerging-directions"><strong>2.5.5 Emerging directions</strong></h3>
+<p>Future research and practice in Abuja should prioritize:</p>
+<ol type="1">
+<li></li>
+<li><p>Hybrid data methods: Combining limited surveys, big data (CDRs, GPS), and synthetic OD generation to overcome data scarcity.</p></li>
+<li></li>
+<li><p>Integration of informal transport: Mapping and formalizing paratransit to reduce emissions while maintaining accessibility.</p></li>
+<li></li>
+<li><p>Network-based planning: Applying accessibility and connectivity metrics to guide targeted NMT and public transport investments.</p></li>
+<li></li>
+<li><p>Participatory governance: Embedding equity and inclusivity into decarbonisation strategies through stakeholder-driven scenario design.</p></li>
+<li></li>
+</ol>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">2.6. Conclusion</h2>
+<p>The literature on transport decarbonisation has clearly shown global trends centred on electrification, modal shift, and systemic urban planning. Yet, low- and middle-income countries (LMICs) such as Nigeria face unique challenges that necessitate adaptive, context-specific strategies. In most African cities, informal transport dominates, data scarcity persists, and institutional weaknesses undermine effective planning.</p>
+<p>For Abuja, the literature highlights a serious gap: the absence of robust OD data, outdated population statistics, underdeveloped mass transit, weak integration of informal systems, and persistent equity challenges. Emerging methodologies such as hybrid OD modelling, network analysis, and participatory planning offer promising tools to bridge these gaps. Most importantly, Abuja’s decarbonisation pathway must combine near-term pragmatic steps (CNG conversion, paratransit reform) with longer-term structural shifts (BRT and rail expansion, land-use integration, electrification).</p>
+<p>Thus, while global and LMIC scholarship provides valuable lessons, Abuja remains under-researched as a case where informal transport, data scarcity, and equity concerns intersect. This dissertation will contribute by situating Abuja within global debates while advancing a methodological framework tailored to data-sparse, informalised contexts. By applying innovative OD modelling and equity-sensitive planning approaches, it seeks to chart a viable and inclusive decarbonisation pathway for Nigeria’s capital.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2025 Idris | Built with Quarto &amp; RStudio</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

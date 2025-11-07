@@ -1,0 +1,647 @@
+---
+title: "Abuja Transport decarbonisation"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# =========================================================
+
+# 1. Load Required Libraries
+
+# =========================================================
+
+```{r}
+library(sf)
+library(here)
+library(ggmap)
+library(tidyverse)
+library(tmap)
+library(ggspatial)
+library(rosm)
+library(prettymapr)
+library(viridis)
+library(stplanr)
+library(osrm)
+library(igraph)
+
+```
+
+```{r}
+# Set consistent seed for reproducibility
+set.seed(2025)
+
+# Set tmap to static mode for reproducibility
+tmap_mode("plot")
+
+```
+
+
+
+# =========================================================
+
+# 2. Define Base Path and Load Data
+
+# =========================================================
+
+```{r}
+# 2.1 Define data paths
+
+data_path <- here("data")
+wards_file <- file.path(data_path, "abuja_wards.gpkg")  # renamed for version consistency
+flows_file <- file.path(data_path, "flows.csv")
+flow_lines_file <- file.path(data_path, "flow_lines.gpkg")
+
+
+# 2.2 Load spatial and tabular data
+wards <- st_read(here("data", "abuja_wards_with_population (3).gpkg"))
+flows_table <- read_csv(here("data", "flows.csv"))
+flow_lines <- st_read(here("data", "flow_lines.gpkg"))
+
+```
+```{r}
+#2.3 Save original data for reproducibility
+saveRDS(wards, file.path(data_path, "wards_raw.rds"))
+saveRDS(flows_table, file.path(data_path, "flows_raw.rds"))
+saveRDS(flow_lines, file.path(data_path, "flow_lines_raw.rds"))
+```
+
+
+
+# =========================================================
+
+# 3. Coordinate Reference System (CRS) Checks
+
+# =========================================================
+
+
+
+
+```{r}
+# 3.1 View CRS for all layers
+
+st_crs(wards)
+st_crs(flow_lines)
+
+# 3.2 Transform flow_lines to match wards CRS
+
+flow_lines <- st_transform(flow_lines, st_crs(wards))
+
+# 3.3 Verify CRS consistency
+
+if (st_crs(wards)$epsg == st_crs(flow_lines)$epsg) {
+message("✅ CRS match confirmed between wards and flow lines.")
+} else {
+warning("⚠️ CRS mismatch! Check coordinate systems manually.")
+}
+
+
+```
+
+# =========================================================
+
+# 4. Quick Data Inspection
+
+# =========================================================
+
+```{r}
+# 4.1 Explore attribute structures
+
+glimpse(wards)
+glimpse(flows_table)
+glimpse(flow_lines)
+
+
+```
+
+```{r}
+# 4.2 Check geometry types
+
+cat("Wards geometry type:", unique(st_geometry_type(wards)), "\n")
+cat("Flow lines geometry type:", unique(st_geometry_type(flow_lines)), "\n")
+
+
+```
+
+```{r}
+# 4.3 Quick row/column counts
+
+cat("Wards:", nrow(wards), "features\n")
+cat("Flows table:", nrow(flows_table), "records\n")
+cat("Flow lines:", nrow(flow_lines), "lines\n")
+
+
+```
+
+# =========================================================
+
+# 5. Quick Visual Sanity Check
+
+# =========================================================
+
+```{r}
+# 5.1 Base plot — verify spatial alignment
+
+plot(st_geometry(wards), col = "grey90", main = "Abuja Wards and Flow Lines")
+plot(st_geometry(flow_lines), col = adjustcolor("blue", alpha.f = 0.4), add = TRUE)
+box()
+
+
+
+```
+
+# =========================================================
+
+# 6. Notes / Next Steps
+
+# =========================================================
+
+# - Wards: MULTIPOLYGON, CRS = WGS84 (EPSG:4326)
+
+# - Flow lines: LINESTRING, transformed to same CRS
+
+# - Flows table: ward-level attributes with flow_score, population, distance_m
+
+# =========================================================
+
+# 7. Data Preparation and Flow Aggregation
+
+# =========================================================
+
+```{r}
+# 7.1 Standardise projection for metric operations (UTM Zone 32N)
+
+wards_utm <- st_transform(wards, 32632)
+flow_lines_utm <- st_transform(flow_lines, 32632)
+
+
+```
+
+```{r}
+# 7.2 Add area (km²) and population density
+
+wards_utm <- wards_utm %>%
+mutate(
+area_km2 = as.numeric(st_area(.)) / 1e6,
+pop_density = Population / (as.numeric(st_area(.)) / 1e6)
+)
+
+```
+
+```{r}
+summary(wards_utm$area_km2)
+summary(wards_utm$pop_density)
+
+```
+
+```{r}
+# 7.3 Aggregate flow table by ward
+
+ward_flows <- flows_table %>%
+group_by(ward) %>%
+summarise(
+mean_flow = mean(flow_score, na.rm = TRUE),
+total_flow = sum(flow_score, na.rm = TRUE),
+n_pois = n()
+)
+
+```
+
+```{r}
+# 7.4 Join aggregated flow data to wards
+
+wards_utm <- wards_utm %>%
+mutate(wardname = str_trim(str_to_lower(wardname))) %>%
+left_join(ward_flows %>% mutate(ward = str_trim(str_to_lower(ward))), by = c("wardname" = "ward"))
+
+
+```
+
+```{r}
+# 7.5 Basic summaries
+
+summary(wards_utm$Population)
+summary(wards_utm$area_km2)
+summary(wards_utm$pop_density)
+summary(wards_utm$mean_flow)
+summary(wards_utm$total_flow)
+names(flows_table)
+names(wards_utm)
+
+
+
+```
+
+# =========================================================
+
+# 8. Visualisation of flow Score
+
+# =========================================================
+
+```{r}
+# 8.1 Filter top 10% of flow lines
+
+threshold <- quantile(flow_lines_utm$flow_score, 0.9, na.rm = TRUE)
+flows_top <- flow_lines_utm %>% filter(flow_score >= threshold)
+
+# 8.2 Plot top flows over ward polygons
+
+ggplot() +
+geom_sf(data = wards_utm, fill = "grey95", color = "grey60", size = 0.3) +
+geom_sf(data = flows_top, aes(size = flow_score, color = flow_score), alpha = 0.6) +
+scale_size_continuous(range = c(0.3, 3), name = "Flow Score") +
+scale_color_viridis_c(option = "plasma", name = "Flow Intensity\n(Top 10%)") +
+labs(title = "Top 10% OD Flows in Abuja",
+subtitle = "Visualizing high-intensity movement corridors",
+caption = "Data: GRID3, OSM, WorldPop | Analysis by Idris") +
+theme_minimal()
+
+
+```
+
+```{r}
+# 8.3 Overlay with population density
+
+ggplot() +
+geom_sf(data = wards_utm, aes(fill = pop_density), color = "grey60", size = 0.2) +
+geom_sf(data = flows_top, aes(size = flow_score, color = flow_score), alpha = 0.6) +
+scale_fill_viridis_c(option = "C", trans = "log10", name = "Pop Density") +
+scale_size_continuous(range = c(0.3, 3), name = "Flow Score") +
+scale_color_viridis_c(option = "plasma", name = "Flow Intensity") +
+labs(title = "Top 10% OD Flows in Abuja",
+caption = "Data: GRID3 / OSM | Analysis: Idris") +
+theme_minimal()
+
+
+
+
+```
+
+# =========================================================
+
+#  9: Accessibility Workflows
+
+# =========================================================
+
+```{r}
+# 9.1 Minimum Distance to Nearest POI
+
+access_df <- flows_table %>%
+st_drop_geometry() %>%
+group_by(ward) %>%
+summarise(min_dist = min(distance_m, na.rm = TRUE))
+
+wards_access <- wards_utm %>%
+left_join(access_df %>% mutate(ward = str_trim(str_to_lower(ward))), by = c("wardname" = "ward"))
+
+
+# Map: Distance to nearest POI
+ggplot(wards_access) +
+  geom_sf(aes(fill = min_dist / 1000), color = "grey70", size = 0.2) +
+  scale_fill_viridis_c(option = "plasma", name = "Distance to Nearest POI (km)") +
+  labs(
+    title = "Accessibility: Distance to Nearest POI by Ward",
+    caption = "Data: OSM (2025), GRID3, WorldPop | Analysis by Idris"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "right")
+
+
+
+```
+
+```{r}
+#9.2 Accessibility Score (Inverse Distance)
+#You can compute a simple accessibility score by taking the inverse of distance:
+# Normalize accessibility score between 0 and 1
+wards_access <- wards_access %>%
+  mutate(access_score = 1 / (min_dist + 1)) %>%
+  mutate(access_score_norm = (access_score - min(access_score, na.rm = TRUE)) /
+                             (max(access_score, na.rm = TRUE) - min(access_score, na.rm = TRUE)))
+
+# Map: Normalized Accessibility Score
+ggplot(wards_access) +
+  geom_sf(aes(fill = access_score_norm), color = "grey70", size = 0.2) +
+  scale_fill_viridis_c(option = "magma", name = "Normalized Accessibility") +
+  labs(
+    title = "Normalized Accessibility Score by Ward",
+    subtitle = "Higher values indicate better proximity to POIs",
+    caption = "Data: OSM (2025), GRID3, WorldPop | Analysis by Idris"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "right")
+
+
+
+```
+
+```{r}
+flows_hotspot <- flow_lines_utm %>%
+  mutate(flow_cat = cut(
+    flow_score,
+    breaks = quantile(flow_score, probs = c(0, 0.5, 0.8, 0.95, 1), na.rm = TRUE),
+    labels = c("Low", "Medium", "High", "Very High"),
+    include.lowest = TRUE
+  ))
+
+
+```
+
+10.3 Combined Flow & Accessibility Map
+
+```{r}
+# Bin accessibility into quartiles
+wards_access <- wards_access %>%
+  mutate(access_bin = cut(access_score_norm,
+                          breaks = quantile(access_score_norm, probs = seq(0, 1, 0.25), na.rm = TRUE),
+                          labels = c("Low", "Moderate", "High", "Very High"),
+                          include.lowest = TRUE))
+
+# Plot: Combined accessibility and flow hotspots
+ggplot() +
+  geom_sf(data = wards_access, aes(fill = access_bin), color = "grey70", size = 0.2) +
+  geom_sf(data = flows_hotspot, aes(color = flow_cat, size = flow_cat), alpha = 0.6) +
+  scale_fill_manual(values = c("Low" = "#f2f0f7", "Moderate" = "#cbc9e2", "High" = "#9e9ac8", "Very High" = "#6a51a3"),
+                    name = "Accessibility Level") +
+  scale_color_manual(values = c("Low" = "#a6cee3", "Medium" = "#1f78b4", "High" = "#33a02c", "Very High" = "#e31a1c"),
+                     name = "Flow Intensity") +
+  scale_size_manual(values = c("Low" = 0.2, "Medium" = 0.7, "High" = 1.2, "Very High" = 2.2),
+                    name = "Flow Intensity") +
+  labs(
+    title = "Combined Accessibility and OD Flow Intensity",
+    subtitle = "Visualizing service proximity and movement corridors",
+    caption = "Data: GRID3, OSM, WorldPop | Analysis by Idris"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(legend.position = "right")
+
+
+```
+
+```{r}
+# Deduplicate flows by ward–POI pair (keep highest flow score)
+flows_dedup <- flows_table %>%
+  group_by(ward, poi) %>%
+  slice_max(flow_score, n = 1, with_ties = FALSE) %>%
+  ungroup()
+
+# Join deduplicated flows to spatial lines
+flows_sf <- flow_lines %>%
+  left_join(flows_dedup, by = c("ward", "poi"))
+
+
+
+```
+
+```{r}
+flows_sf <- flows_sf %>%
+  mutate(purpose = case_when(
+    fclass %in% c("school", "university", "college") ~ "Education",
+    fclass %in% c("hospital", "clinic", "pharmacy") ~ "Healthcare",
+    fclass %in% c("supermarket", "mall", "market_place") ~ "Shopping",
+    fclass %in% c("park", "stadium", "sports_centre", "pitch") ~ "Recreation",
+    fclass %in% c("courthouse", "embassy", "public_building",
+                  "community_centre", "library", "post_office") ~ "Public Services",
+    TRUE ~ "Other"
+  ))
+
+
+```
+
+```{r}
+flows_sf <- flows_sf %>%
+  mutate(
+    flow_score = coalesce(flow_score.y, flow_score.x),
+    distance_m = coalesce(distance_m.y, distance_m.x)
+  ) %>%
+  select(ward, poi, fclass, purpose, flow_score, distance_m, geometry = geom)
+
+```
+
+```{r}
+
+ggplot() +
+  geom_sf(data = wards_utm, fill = "grey95", color = "grey80", size = 0.2) +
+  geom_sf(data = flows_sf, aes(color = purpose, size = flow_score), alpha = 0.5) +
+  scale_size_continuous(range = c(0.1, 1.2), guide = "none") +
+  scale_color_brewer(palette = "Set1", name = "Purpose") +
+  facet_wrap(~purpose) +
+  labs(
+    title = "OD Flows in Abuja by Travel Purpose",
+    caption = "Data: OSM, WorldPop (2025), GRID3 | Analysis by Idris"
+  ) +
+  theme_minimal(base_size = 9) +
+  theme(
+    legend.position = "bottom",
+    panel.grid = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank()
+  )
+
+
+```
+
+```{r}
+
+ggplot() +
+  geom_sf(data = wards_utm, fill = "grey95", color = "grey80", size = 0.2) +
+  geom_sf(data = flows_sf, aes(color = purpose, size = flow_score), alpha = 0.4) +
+  scale_size_continuous(range = c(0.1, 1.2), guide = "none") +
+  scale_color_brewer(palette = "Set1", name = "Travel Purpose") +
+  labs(
+    title = "OD Flows in Abuja by Travel Purpose",
+    caption = "Data: OSM, WorldPop (2025), GRID3 | Analysis by Idris"
+  ) +
+  theme_minimal(base_size = 9) +
+  theme(
+    legend.position = "bottom",
+    panel.grid = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank()
+  )
+
+
+```
+
+```{r}
+
+# 1. Transform ward and flow geometries to WGS84 (EPSG:4326)
+wards_ll <- st_transform(wards_utm, 4326)
+flows_sf_ll <- st_transform(flows_sf, 4326)
+
+
+# 2. Extract bounding box and convert to numeric vector
+bbox <- st_bbox(wards_ll)
+bbox_vec <- as.numeric(c(bbox["xmin"], bbox["ymin"], bbox["xmax"], bbox["ymax"]))
+
+# 3. Register Stadia Maps API key
+register_stadiamaps(key = "213d8f82-ca6c-4be7-8530-1202aae153e4")
+
+# 4. Get basemap
+map <- get_stadiamap(
+  bbox = bbox_vec,
+  zoom = 11,
+  maptype = "stamen_toner_lite"
+)
+
+# 5. Plot OD flows by purpose
+ggmap(map) +
+  geom_sf(data = flows_sf_ll, aes(color = purpose, size = flow_score),
+          inherit.aes = FALSE, alpha = 0.6) +
+  scale_color_brewer(palette = "Set1", name = "Travel Purpose") +
+  scale_size_continuous(
+    trans = "log",  # ✅ handles wide range of flow_score
+    range = c(0.3, 2.5),
+    name = "Flow Score"
+  ) +
+  labs(
+    title = "OD Flows in Abuja by Travel Purpose",
+    caption = "Basemap: Stadia Maps | Data: OSM, WorldPop (2025), GRID3 | Analysis by Idris"
+  ) +
+  theme_void()
+
+
+```
+
+```{r}
+library(tmap)
+tmap_mode("view")
+
+tm_shape(wards_access) +
+  tm_polygons("access_score_norm", palette = "magma", title = "Accessibility") +
+tm_shape(flows_hotspot) +
+  tm_lines("flow_cat", lwd = "flow_score", palette = "Set1", alpha = 0.6)
+
+```
+
+
+# =========================================================
+# Emissions Estimation by Travel Purpose
+# =========================================================
+
+```{r}
+# 1. Define global average emission factors (gCO2/m) by travel purpose
+emission_factors <- tibble(
+  purpose = c("Education", "Healthcare", "Shopping", "Recreation", "Public Services", "Other"),
+  mode = c("bus", "car", "car", "walk", "bus", "car"),
+  gco2_per_m = c(0.105, 0.192, 0.192, 0.0, 0.105, 0.192)
+)
+
+# 2. Join emission factors to flows and calculate emissions
+flows_emissions <- flows_sf %>%
+  left_join(emission_factors, by = "purpose") %>%
+  mutate(
+    emissions_g = flow_score * distance_m * gco2_per_m,
+    emissions_kg = emissions_g / 1000
+  )
+
+# 3. Summarize total emissions by ward
+ward_emissions <- flows_emissions %>%
+  st_drop_geometry() %>%
+  group_by(ward) %>%
+  summarise(total_emissions_kg = sum(emissions_kg, na.rm = TRUE))
+
+# 4. Normalize ward names for join consistency
+wards_utm <- wards_utm %>%
+  mutate(ward_clean = str_trim(str_to_lower(wardname)))
+
+ward_emissions <- ward_emissions %>%
+  mutate(ward_clean = str_trim(str_to_lower(ward)))
+
+# 5. Join emissions to ward polygons
+wards_utm <- left_join(
+  wards_utm,
+  ward_emissions %>% select(ward_clean, total_emissions_kg),
+  by = "ward_clean"
+)
+
+# 6. Calculate per capita emissions and prepare for log-scale
+wards_utm <- wards_utm %>%
+  mutate(
+    emissions_per_capita = total_emissions_kg / Population,
+    emissions_per_capita_plot = ifelse(emissions_per_capita <= 0 | is.na(emissions_per_capita), 0.001, emissions_per_capita),
+    total_emissions_kg_plot = ifelse(total_emissions_kg <= 0 | is.na(total_emissions_kg), 0.001, total_emissions_kg)
+  )
+
+# 7. Map total emissions (log-scaled)
+ggplot(wards_utm) +
+  geom_sf(aes(fill = total_emissions_kg_plot), color = "grey70", size = 0.2) +
+  scale_fill_viridis_c(option = "inferno", trans = "log10", name = "Total Emissions (kg)") +
+  labs(
+    title = "Estimated Transport Emissions by Ward",
+    subtitle = "Based on global average emission factors by travel purpose",
+    caption = "Data: GRID3, OSM, WorldPop | Analysis by Idris"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "right")
+
+# 8. Map per capita emissions (log-scaled)
+ggplot(wards_utm) +
+  geom_sf(aes(fill = emissions_per_capita_plot), color = "grey70", size = 0.2) +
+  scale_fill_viridis_c(option = "magma", trans = "log10", name = "Emissions per Capita (kg)") +
+  labs(
+    title = "Per Capita Transport Emissions by Ward",
+    subtitle = "Highlights equity and efficiency of mobility",
+    caption = "Data: GRID3, OSM, WorldPop | Analysis by Idris"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "right")
+
+
+```
+
+
+#### Mode Shift Opportunity Zones
+
+
+
+```{r}
+# 1. Filter OD flows under 2km with high flow_score and relevant purposes
+mode_shift_candidates <- flows_sf %>%
+  filter(
+    distance_m <= 2000,
+    flow_score >= quantile(flow_score, 0.75, na.rm = TRUE),
+    purpose %in% c("Shopping", "Recreation", "Public Services")  # likely walkable
+  )
+
+# 2. Estimate potential emission savings (assuming shift to walking = 0 gCO2/m)
+mode_shift_candidates <- mode_shift_candidates %>%
+  left_join(emission_factors, by = "purpose") %>%
+  mutate(
+    avoided_emissions_kg = flow_score * distance_m * gco2_per_m / 1000
+  )
+
+# 3. Summarize opportunity by ward
+ward_shift_summary <- mode_shift_candidates %>%
+  st_drop_geometry() %>%
+  group_by(ward) %>%
+  summarise(
+    total_flows = n(),
+    total_flow_score = sum(flow_score, na.rm = TRUE),
+    total_avoided_emissions_kg = sum(avoided_emissions_kg, na.rm = TRUE)
+  ) %>%
+  mutate(ward_clean = str_trim(str_to_lower(ward)))
+
+# 4. Join to ward polygons
+wards_utm <- wards_utm %>%
+  left_join(ward_shift_summary, by = "ward_clean")
+
+# 5. Map mode shift opportunity zones
+ggplot() +
+  geom_sf(data = wards_utm, aes(fill = total_avoided_emissions_kg), color = "grey80", size = 0.2) +
+  geom_sf(data = mode_shift_candidates, aes(size = flow_score, color = purpose), alpha = 0.6) +
+  scale_fill_viridis_c(option = "C", name = "Avoided Emissions (kg)") +
+  scale_size_continuous(range = c(0.3, 2), name = "Flow Score") +
+  scale_color_brewer(palette = "Set1", name = "Trip Purpose") +
+  labs(
+    title = "Mode Shift Opportunity Zones in Abuja",
+    subtitle = "Flows <2km with high demand and emission savings potential",
+    caption = "Data: GRID3, OSM, WorldPop | Analysis by Idris"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "right")
+
+
+```
